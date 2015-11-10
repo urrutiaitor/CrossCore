@@ -1,0 +1,735 @@
+Session started on Tuesday November 10, 2015 08:50:23AM (Hora estándar romance)
+
+EnableCustomBoardSupport()
+  [I] enable: 0
+  [I] processorType: ADSP-BF537
+  [I] fileName: 
+  [T] 0.00007 seconds
+ConnectWithOptions()
+  [I] Target: Blackfin Emulators/EZ-KIT Lites
+  [I] Platform: ADSP-BF537 EZ-KIT Lite via Debug Agent
+  [I] Processor: ADSP-BF537
+  [I] ProcId: 0 Properties 1
+
+>> StateChange()
+  [I] State: Running
+  [I] Reason: Client Request
+  [I] ProcId: 0
+
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 4.37987 seconds
+Reset()
+  [I] ProcId: 0
+  [I] Wait: 1
+
+>> StateChange()
+  [I] State: Reset
+  [I] Reason: Client Request
+  [I] ProcId: 0
+
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.44541 seconds
+GetProcessorType()
+  [I] procId: 0
+  [O] Processor Type:: ADSP-BF537
+  [T] 0.00011 seconds
+GetSiliconRevision()
+  [I] procId: 0
+  [O] Silicon Revision:: 0.3
+  [T] 0.00005 seconds
+GetProcessorType()
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [O] Processor Type: ADSP-BF537
+  [T] 0.00121 seconds
+GetProgramInfo()
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [O] Toolchain: 3
+  [O] Architecture: Blackfin
+  [O] Processor Type: ADSP-BF537
+  [O] Entry Address: ffa00000
+  [O] Silicon Revision: any
+  [T] 0.00098 seconds
+LoadProgramWithOptions()
+  [I] ProcId: 0
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [I] Properties: 2
+  [I] WorkingDirectory: 
+  [T] 1.46157 seconds
+GetProgramInfo()
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [O] Toolchain: 3
+  [O] Architecture: Blackfin
+  [O] Processor Type: ADSP-BF537
+  [O] Entry Address: ffa00000
+  [O] Silicon Revision: any
+  [T] 0.00098 seconds
+RemoveAllBreakpoints()
+  [I] ProcId: 0
+  [T] 0.00012 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __fatal_exception
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.03496 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __primIO
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.02662 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __ov_end
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __ov_end.  Symbol not found.
+**********************************************
+  [T] 0.00023 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: _ov_end
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol _ov_end.  Symbol not found.
+**********************************************
+  [T] 0.00017 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __stack_overflowed
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __stack_overflowed.  Symbol not found.
+**********************************************
+  [T] 0.00017 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: ___lib_prog_term
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.02677 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __dbg_assert
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __dbg_assert.  Symbol not found.
+**********************************************
+  [T] 0.00023 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __fatal_error
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.02727 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __ov_start
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __ov_start.  Symbol not found.
+**********************************************
+  [T] 0.00024 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: _ov_start
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol _ov_start.  Symbol not found.
+**********************************************
+  [T] 0.00022 seconds
+GetFunctionBounds()
+  [I] ProcId: 0
+  [I] FunctionName: main
+  [O] TopOfFunction: 0xffa02c6c
+  [O] TopOfBody: 0xffa02c74
+  [O] EndOfFunction: 0xffa032ba
+  [O] EndOfBody: 0xffa032ba
+  [T] 0.00045 seconds
+SetBreakpointAtAddress()
+  [I] ProcId: 0
+  [I] Address: 0xffa02c74
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.02768 seconds
+Run()
+  [I] ProcId: 0
+  [I] Wait: 0
+  [I] Timeout: 0
+
+>> StateChange()
+  [I] State: Running
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.12438 seconds
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Breakpoint
+  [I] ProcId: 0
+
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] Expression: $PC
+  [I] Format: Hexadecimal
+  [O] Result: 0xffa02c74
+  [T] 0.00037 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 1
+  [T] 0.10161 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00033 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00024 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00006 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00025 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00007 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00007 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+SetActiveStackFrame()
+  [I] ProcId: 0
+  [I] FrameId: 0xff807f90
+  [T] 0.00008 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00008 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00033 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00013 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00309 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00010 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00298 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00006 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00292 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00005 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00013 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00022 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00019 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00038 seconds
+GetMixedAssemblyByAddress()
+  [I] ProcId: 0
+  [I] Start Address: 0xffa02c74
+  [I] End Address: 0xffa02ca8
+  [I] Instruction Type: -1
+  [O] Mixed Instructions Found: 7
+  [T] 0.02355 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00012 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00294 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00013 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00293 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00030 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00007 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00007 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00013 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00022 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00019 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00027 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 1
+  [T] 0.00018 seconds
+GetLocalVariables()
+  [I] ProcId: 0
+  [I] FrameId: 0xff807f90
+  [O]   | VariableName : Result
+  [O]   | VariableName : ptr_int32
+  [O]   | VariableName : k
+  [O]   | VariableName : contador_tramas
+  [O]   | VariableName : ptr_test
+  [O]   | VariableName : bIsBufAvailable
+  [O]   | VariableName : counter
+  [T] 0.08231 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 184
+  [O]   | Address      : 0xffa02c74
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00041 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(Result)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00040 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(ptr_int32)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int*
+  [T] 0.00013 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(k)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00022 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(contador_tramas)
+  [I] Format: Hexadecimal
+  [O] Result: int
+  [T] 0.00021 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(ptr_test)
+  [I] Format: Hexadecimal
+  [O] Result: volatile unsigned int*
+  [T] 0.00019 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(Result)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00021 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(ptr_int32)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int*
+  [T] 0.00013 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(k)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00012 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(contador_tramas)
+  [I] Format: Hexadecimal
+  [O] Result: int
+  [T] 0.00016 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(ptr_test)
+  [I] Format: Hexadecimal
+  [O] Result: volatile unsigned int*
+  [T] 0.00012 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: Result
+  [O] Expression: Result
+  [T] 0.00011 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: ptr_int32
+  [O] Expression: ptr_int32
+  [O]   | Full Child      : *(ptr_int32)
+  [O]   | Child           : 
+  [T] 0.00015 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: k
+  [O] Expression: k
+  [T] 0.00016 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: contador_tramas
+  [O] Expression: contador_tramas
+  [T] 0.00011 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: ptr_test
+  [O] Expression: ptr_test
+  [O]   | Full Child      : *(ptr_test)
+  [O]   | Child           : 
+  [T] 0.00015 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(Result)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00017 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: ptr_int32
+  [I] Format: Unsigned Integer
+  [O] Result: 0
+  [T] 0.00017 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: k
+  [I] Format: Unsigned Integer
+  [O] Result: 0
+  [T] 0.00012 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: contador_tramas
+  [I] Format: Integer
+  [O] Result: 0
+  [T] 0.00012 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: ptr_test
+  [I] Format: Unsigned Integer
+  [O] Result: 4286584296
+  [T] 0.00013 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: Result
+  [I] Format: Unsigned Integer
+  [O] Result: 4286584300
+  [T] 0.00011 seconds
+Run()
+  [I] ProcId: 0
+  [I] Wait: 0
+  [I] Timeout: 0
+
+>> StateChange()
+  [I] State: Running
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.10317 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00006 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00174 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00008 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00169 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00013 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00003 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00003 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00007 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 569
+  [T] 0.00165 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00006 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00004 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00002 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00003 seconds
+Disconnect()
+
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.60635 seconds

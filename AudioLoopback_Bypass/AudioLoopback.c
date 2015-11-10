@@ -31,7 +31,7 @@ to the terms of the associated Analog Devices License Agreement.
 #define PI 3.1415f
 
 #define NUM_COEFFS 51
-#define NUM_SAMPLES 48000
+#define NUM_SAMPLES 8192
 
 // MIKEL: Insert here your .h with your filter coefficients and define any global variables
 // you might need
@@ -202,13 +202,14 @@ void main (void)
 	/* Filter initializations */
 	// MIKEL: Insert ere any filter initialization you might need
 
-	int i;
-	for(i = 0; i < NUM_COEFFS; i++) {
-		delay[i] = 0;
+	int counter;
+	for(counter = 0; counter < NUM_COEFFS; counter++) {
+		delay1[counter] = 0;
+		delay2[counter] = 0;
 	}
 
-	fir_init(state1, filter1_fr32_hp, delay, NUM_COEFFS, 0);
-	fir_init(state2, filter1_fr32_hp, delay, NUM_COEFFS, 0);
+	fir_init(state1, filter1_fr32, delay1, NUM_COEFFS, 0);
+	fir_init(state2, filter1_fr32, delay2, NUM_COEFFS, 0);
 
 
 	/* Initialize buffer pointers */
