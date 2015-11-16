@@ -34,7 +34,7 @@
 								<inputType id="assembler.input.953283752" name="Assembler Source" superClass="assembler.input"/>
 							</tool>
 							<tool id="blackfin.toolchain.compiler.1464744705" name="CrossCore Blackfin C/C++ Compiler" superClass="blackfin.toolchain.compiler">
-								<option id="compiler.option.optimization.597845234" name="Enable optimization (-O)" superClass="compiler.option.optimization"/>
+								<option id="compiler.option.optimization.597845234" name="Enable optimization (-O)" superClass="compiler.option.optimization" value="true" valueType="boolean"/>
 								<option id="compiler.option.debugcode.93352385" name="Generate debug information (-g)" superClass="compiler.option.debugcode"/>
 								<option id="compiler.option.proc.1672857879" name="-proc" superClass="compiler.option.proc" value=" ADSP-BF537" valueType="string"/>
 								<option id="compiler.option.sirevision.1199451651" name="-si-revision" superClass="compiler.option.sirevision" value=" any" valueType="string"/>
@@ -185,11 +185,17 @@
 			<content-type-mapping configuration="" content-type="org.eclipse.cdt.core.cxxSource" language="org.eclipse.cdt.core.c++.adi.extension"/>
 		</project-mappings>
 	</storageModule>
-	<storageModule moduleId="refreshScope" versionNumber="1">
-		<resource resourceType="PROJECT" workspacePath="/AudioLoopback_Bypass"/>
+	<storageModule moduleId="refreshScope" versionNumber="2">
+		<configuration configurationName="Release">
+			<resource resourceType="PROJECT" workspacePath="/AudioLoopback_Bypass"/>
+		</configuration>
+		<configuration configurationName="Debug">
+			<resource resourceType="PROJECT" workspacePath="/AudioLoopback_Bypass"/>
+		</configuration>
 	</storageModule>
 	<storageModule moduleId="scannerConfiguration">
 		<autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
 	</storageModule>
 	<storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+	<storageModule moduleId="org.eclipse.cdt.internal.ui.text.commentOwnerProjectMappings"/>
 </cproject>
