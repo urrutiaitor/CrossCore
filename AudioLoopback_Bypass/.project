@@ -86,23 +86,6 @@
 		<nature>org.eclipse.cdt.managedbuilder.core.ScannerConfigNature</nature>
 		<nature>com.analog.crosscore.managedbuilder.core.CCESProjectNature</nature>
 	</natures>
-	<linkedResources>
-		<link>
-			<name>libdsp/filter1_fr32.h</name>
-			<type>1</type>
-			<locationURI>PROJECT_LOC/filter1_fr32.h</locationURI>
-		</link>
-		<link>
-			<name>system/BF537_EZ-KIT_Lite/drivers/adc/adi_ad1871.c</name>
-			<type>1</type>
-			<locationURI>COM_ANALOG_CROSSCORE_ADDINS_BF537_EZKIT_LITE_1_0_0_LOC/Blackfin/src/drivers/adc/ad1871/adi_ad1871.c</locationURI>
-		</link>
-		<link>
-			<name>system/BF537_EZ-KIT_Lite/drivers/dac/adi_ad1854.c</name>
-			<type>1</type>
-			<locationURI>COM_ANALOG_CROSSCORE_ADDINS_BF537_EZKIT_LITE_1_0_0_LOC/Blackfin/src/drivers/dac/ad1854/adi_ad1854.c</locationURI>
-		</link>
-	</linkedResources>
 	<variableList>
 		<variable>
 			<name>CCES</name>

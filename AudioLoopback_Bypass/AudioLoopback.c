@@ -31,7 +31,7 @@ to the terms of the associated Analog Devices License Agreement.
 #define PI 3.1415f
 
 #define NUM_COEFFS 51
-#define NUM_SAMPLES 48000
+#define NUM_SAMPLES 8192
 
 // MIKEL: Insert here your .h with your filter coefficients and define any global variables
 // you might need
@@ -46,6 +46,10 @@ segment ("sdram0")  fract32 guardado2[BUFFER_SIZE/8];
 segment ("sdram0")  fract32 salida1[BUFFER_SIZE/8];
 //#pragma align 4
 segment ("sdram0")  fract32 salida2[BUFFER_SIZE/8];
+
+segment ("sdram0")  fract16 simplify1[BUFFER_SIZE/8];
+segment ("sdram0") fract16 simplify2[BUFFER_SIZE/8];
+
 
 //segment ("sdram0")  fract16 guardado1_fr16[BUFFER_SIZE/8];
 //segment ("sdram0")  fract16 guardado2_fr16[BUFFER_SIZE/8];
@@ -202,13 +206,14 @@ void main (void)
 	/* Filter initializations */
 	// MIKEL: Insert ere any filter initialization you might need
 
-	int i;
-	for(i = 0; i < NUM_COEFFS; i++) {
-		delay[i] = 0;
+	int counter;
+	for(counter = 0; counter < NUM_COEFFS; counter++) {
+		delay1[counter] = 0;
+		delay2[counter] = 0;
 	}
 
-	fir_init(state1, filter1_fr32_hp, delay, NUM_COEFFS, 0);
-	fir_init(state2, filter1_fr32_hp, delay, NUM_COEFFS, 0);
+	//fir_init(state1, filter1_fr32, delay1, NUM_COEFFS, 0);
+	//fir_init(state2, filter1_fr32, delay2, NUM_COEFFS, 0);
 
 
 	/* Initialize buffer pointers */
@@ -290,19 +295,19 @@ void main (void)
     if (Result == 0)
     {
 
-/* IF (Application Time-out enabled) */
-#if defined (ENABLE_APP_TIME_OUT)
-        /* Continue until time-out counter expires */
-        while (AppTimeOutCount--)
-/* ELSE (Application does not time out) */
-#else
-        while (1)
-#endif /* ENABLE_APP_TIME_OUT */
+	/* IF (Application Time-out enabled) */
+	#if defined (ENABLE_APP_TIME_OUT)
+			/* Continue until time-out counter expires */
+			while (AppTimeOutCount--)
+	/* ELSE (Application does not time out) */
+	#else
+			while (1)
+	#endif /* ENABLE_APP_TIME_OUT */
 
-        {
+			{
 
-/* IF (Non-Blocking mode) */
-#if !defined (ENABLE_CALLBACK)
+	/* IF (Non-Blocking mode) */
+	#if !defined (ENABLE_CALLBACK)
 
             /* Query AD1871 for processed buffer status */
             Result = (uint32_t) adi_ad1871_IsRxBufAvailable (hAd1871Adc, &bIsBufAvailable);
@@ -378,8 +383,14 @@ void main (void)
                 //       at 48 kHz. Input is in guardado1 and guardado2. Outputs should be written in salida1 and
                 //		 salida2.
 
-                fir_fr32(guardado1, salida1, NUM_SAMPLES, &state1);
-                fir_fr32(guardado2, salida2, NUM_SAMPLES, &state2);
+//                for (int counter = 0; counter < 8192; counter++) {
+//                	simplify1[counter] = guardado1[counter]>>16;
+//                	simplify2[counter] = guardado2[counter]>>16;
+//                }
+//                //fir_fr32(guardado1, salida1, NUM_SAMPLES, &state1);
+                //fir_fr32(guardado2, salida2, NUM_SAMPLES, &state2);
+                ourFilter(guardado1, salida1, filter1_fr32);
+                ourFilter(guardado2, salida2, filter1_fr32);
 
 
                 ptr_int32 = (unsigned int *) pDacBuf;
@@ -487,6 +498,29 @@ void main (void)
     {
         printf ("Failed\n");
     }
+}
+
+void ourFilter(fract32 *input, fract32 *output, fract32 *response) {
+	int nMax = 8192;
+	int kMax = 51;
+	int n=0;
+	int k=0;
+	int i = 0;
+
+//	for (int n = 0; n < nMax; n++)
+//	output[n] = input[n];
+
+	for (i = 0; i < nMax; i++){
+		output[i] = 0;
+	}
+
+	for (n = 0; n < nMax; n++) {
+		for (k = 0; k < kMax; k++) {
+			if ((n - k >= 0) && ((n - k) < nMax)) {
+				output[n] = output[n] + ((response[k]>>16)*(input[n-k]>>15));
+			}
+		}
+	}
 }
 
 /*

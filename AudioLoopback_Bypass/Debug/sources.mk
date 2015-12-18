@@ -31,8 +31,8 @@ C_UPPER_DEPS :=
 SUBDIRS := \
 system/startup_ldf \
 system/pinmux/GeneratedSources \
+system/dac/ad1854 \
 system \
-system/BF537_EZ-KIT_Lite/drivers/dac \
-system/BF537_EZ-KIT_Lite/drivers/adc \
+system/adc/ad1871 \
 . \
 

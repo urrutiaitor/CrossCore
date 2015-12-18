@@ -1,0 +1,1348 @@
+08:27:41 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../system/device_class/audio/dac/adi_dev_audio_ad1854.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/device_class/audio/dac/adi_dev_audio_ad1854.d" -o "system/device_class/audio/dac/adi_dev_audio_ad1854.doj" "../system/device_class/audio/dac/adi_dev_audio_ad1854.c"
+"..\system\device_class\audio\dac\adi_dev_audio_ad1854.c", line 37: cc2388:  catastrophic error: cannot open source file "adi_dev_class_common.h"
+  #include <adi_dev_class_common.h>
+                                   ^
+
+1 catastrophic error detected in the compilation of "..\system\device_class\audio\dac\adi_dev_audio_ad1854.c".
+Compilation terminated.
+cc3089: fatal error: Compilation failed (code:4)
+make: *** [system/device_class/audio/dac/adi_dev_audio_ad1854.doj] Error 1
+08:28:05 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../system/dac/ad1854/adi_ad1854.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/dac/ad1854/adi_ad1854.d" -o "system/dac/ad1854/adi_ad1854.doj" "../system/dac/ad1854/adi_ad1854.c"
+'Finished building: ../system/dac/ad1854/adi_ad1854.c'
+' '
+'Building file: ../system/adc/ad1871/adi_ad1871.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/adc/ad1871/adi_ad1871.d" -o "system/adc/ad1871/adi_ad1871.doj" "../system/adc/ad1871/adi_ad1871.c"
+'Finished building: ../system/adc/ad1871/adi_ad1871.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:28:31 **** Clean-only build of configuration Debug for project AudioLoopback_Bypass ****
+make clean 
+clean  "./system/startup_ldf/app_cplbtab.doj"  "./system/startup_ldf/app_handler_table.doj"  "./system/startup_ldf/app_heaptab.doj"  "./system/startup_ldf/app_startup.doj"  "./system/pinmux/GeneratedSources/pinmux_config.doj"  "./system/dac/ad1854/adi_ad1854.doj"  "./system/adc/ad1871/adi_ad1871.doj"  "./system/adi_initialize.doj"  "./AudioLoopback.doj" "./system/startup_ldf/app_cplbtab.d"  "./system/startup_ldf/app_handler_table.d"  "./system/startup_ldf/app_heaptab.d"  "./system/pinmux/GeneratedSources/pinmux_config.d"  "./system/dac/ad1854/adi_ad1854.d"  "./system/adc/ad1871/adi_ad1871.d"  "./system/adi_initialize.d"  "./AudioLoopback.d" linker_log.xml  "./system/startup_ldf/app_startup.d" AudioLoopback_Bypass.dxe
+' '
+08:28:32 **** Clean-only build of configuration Debug for project AudioLoopback_Bypass ****
+make clean 
+clean  "./system/startup_ldf/app_cplbtab.doj"  "./system/startup_ldf/app_handler_table.doj"  "./system/startup_ldf/app_heaptab.doj"  "./system/startup_ldf/app_startup.doj"  "./system/pinmux/GeneratedSources/pinmux_config.doj"  "./system/dac/ad1854/adi_ad1854.doj"  "./system/adc/ad1871/adi_ad1871.doj"  "./system/adi_initialize.doj"  "./AudioLoopback.doj" "./system/startup_ldf/app_cplbtab.d"  "./system/startup_ldf/app_handler_table.d"  "./system/startup_ldf/app_heaptab.d"  "./system/pinmux/GeneratedSources/pinmux_config.d"  "./system/dac/ad1854/adi_ad1854.d"  "./system/adc/ad1871/adi_ad1871.d"  "./system/adi_initialize.d"  "./AudioLoopback.d" linker_log.xml  "./system/startup_ldf/app_startup.d" AudioLoopback_Bypass.dxe
+' '
+08:28:33 **** Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../system/startup_ldf/app_cplbtab.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_cplbtab.doj" "../system/startup_ldf/app_cplbtab.c"
+'Finished building: ../system/startup_ldf/app_cplbtab.c'
+' '
+'Building file: ../system/startup_ldf/app_handler_table.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_handler_table.doj" "../system/startup_ldf/app_handler_table.c"
+'Finished building: ../system/startup_ldf/app_handler_table.c'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore Blackfin Assembler'
+easmblkfn.exe -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -si-revision any -g -D_DEBUG -DCORE0 -i"D:\CrossCore\AudioLoopback_Bypass\system" -i"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/pinmux/GeneratedSources/pinmux_config.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/pinmux/GeneratedSources/pinmux_config.d" -o "system/pinmux/GeneratedSources/pinmux_config.doj" "../system/pinmux/GeneratedSources/pinmux_config.c"
+'Finished building: ../system/pinmux/GeneratedSources/pinmux_config.c'
+' '
+'Building file: ../system/dac/ad1854/adi_ad1854.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/dac/ad1854/adi_ad1854.d" -o "system/dac/ad1854/adi_ad1854.doj" "../system/dac/ad1854/adi_ad1854.c"
+'Finished building: ../system/dac/ad1854/adi_ad1854.c'
+' '
+'Building file: ../system/adc/ad1871/adi_ad1871.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/adc/ad1871/adi_ad1871.d" -o "system/adc/ad1871/adi_ad1871.doj" "../system/adc/ad1871/adi_ad1871.c"
+'Finished building: ../system/adc/ad1871/adi_ad1871.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:28:51 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:30:38 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:30:41 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:33:14 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:35:26 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:39:45 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:39:49 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:41:28 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:46:41 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:50:22 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:13:39 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 384: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                            ^
+
+"..\AudioLoopback.c", line 384: cc1586:  error: expression must have integral or fixed-point type
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                                       ^
+
+"..\AudioLoopback.c", line 384: cc1586:  error: expression must have integral or fixed-point type
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                                                        ^
+
+"..\AudioLoopback.c", line 384: cc1080: {D} warning: Function does not have a full prototype
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                            ^
+
+"..\AudioLoopback.c", line 384: cc0137:  error: expression must be a modifiable lvalue
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                  ^
+
+"..\AudioLoopback.c", line 495: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 384)
+  static uint32_t ourFilter (uint16_t input[], uint16_t response[]) {
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0109:  error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+  				result(n) = result(n) + (response(k)*input(n));
+  				^
+
+"..\AudioLoopback.c", line 503: cc0109:  error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+  				result(n) = result(n) + (response(k)*input(n));
+  				            ^
+
+"..\AudioLoopback.c", line 503: cc0109:  error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+  				result(n) = result(n) + (response(k)*input(n));
+  				                         ^
+
+"..\AudioLoopback.c", line 503: cc0109:  error: expression preceding parentheses of apparent call must have (pointer-to-) function type
+  				result(n) = result(n) + (response(k)*input(n));
+  				                                     ^
+
+"..\AudioLoopback.c", line 508: cc0120: {D} warning: return value type does not match the function type
+  	return result;
+  	       ^
+
+7 errors detected in the compilation of "..\AudioLoopback.c".
+cc3089: fatal error: Compilation failed (code:2)
+make: *** [AudioLoopback.doj] Error 1
+09:16:50 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 384: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                            ^
+
+"..\AudioLoopback.c", line 384: cc1586:  error: expression must have integral or fixed-point type
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                                       ^
+
+"..\AudioLoopback.c", line 384: cc1586:  error: expression must have integral or fixed-point type
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                                                        ^
+
+"..\AudioLoopback.c", line 384: cc1080: {D} warning: Function does not have a full prototype
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                            ^
+
+"..\AudioLoopback.c", line 384: cc0137:  error: expression must be a modifiable lvalue
+                  salida1 = ourFilter((guardado1>>16), (filter1_fr32>>16));
+                  ^
+
+"..\AudioLoopback.c", line 495: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 384)
+  static uint32_t ourFilter (uint16_t input[], uint16_t response[]) {
+                  ^
+
+"..\AudioLoopback.c", line 503: cc1665: {D} warning: variable "result" is possibly used before its value is set in loop
+  				result[n] = result[n] + (response[k]*input[n]);
+  				            ^
+
+"..\AudioLoopback.c", line 508: cc0120: {D} warning: return value type does not match the function type
+  	return result;
+  	       ^
+
+3 errors detected in the compilation of "..\AudioLoopback.c".
+cc3089: fatal error: Compilation failed (code:2)
+make: *** [AudioLoopback.doj] Error 1
+09:19:58 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 388: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  salida1 = ourFilter(guardado1, filter1_fr32);
+                            ^
+
+"..\AudioLoopback.c", line 388: cc1080: {D} warning: Function does not have a full prototype
+                  salida1 = ourFilter(guardado1, filter1_fr32);
+                            ^
+
+"..\AudioLoopback.c", line 388: cc0137:  error: expression must be a modifiable lvalue
+                  salida1 = ourFilter(guardado1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 499: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 388)
+  static uint32_t ourFilter (uint16_t input[], uint16_t response[]) {
+                  ^
+
+"..\AudioLoopback.c", line 507: cc1665: {D} warning: variable "result" is possibly used before its value is set in loop
+  				result[n] = result[n] + (response[k]*input[n]);
+  				            ^
+
+"..\AudioLoopback.c", line 512: cc0120: {D} warning: return value type does not match the function type
+  	return result;
+  	       ^
+
+1 error detected in the compilation of "..\AudioLoopback.c".
+cc3089: fatal error: Compilation failed (code:2)
+make: *** [AudioLoopback.doj] Error 1
+09:35:22 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 391: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  salida1 = ourFilter(guardado1, filter1_fr32);
+                            ^
+
+"..\AudioLoopback.c", line 391: cc1080: {D} warning: Function does not have a full prototype
+                  salida1 = ourFilter(guardado1, filter1_fr32);
+                            ^
+
+"..\AudioLoopback.c", line 391: cc0137:  error: expression must be a modifiable lvalue
+                  salida1 = ourFilter(guardado1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 502: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 391)
+  static fract32 ourFilter (fract16 input[], fract16 response[]) {
+                 ^
+
+"..\AudioLoopback.c", line 510: cc1665: {D} warning: variable "result" is possibly used before its value is set in loop
+  				result[n] = result[n] + (response[k]*input[n-k]);
+  				            ^
+
+"..\AudioLoopback.c", line 515: cc0120: {D} warning: return value type does not match the function type
+  	return result;
+  	       ^
+
+1 error detected in the compilation of "..\AudioLoopback.c".
+cc3089: fatal error: Compilation failed (code:2)
+make: *** [AudioLoopback.doj] Error 1
+09:44:28 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 391: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 391: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 502: cc0260: {D} warning: explicit type is missing ("int" assumed)
+  static ourFilter (fract16 input[], fract32 output[], fract16 response[]) {
+         ^
+
+"..\AudioLoopback.c", line 514: cc0120: {D} warning: return value type does not match the function type
+  	return output;
+  	       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+09:44:41 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:17:08 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:17:19 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:17:51 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:18:16 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:19:41 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:22:15 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 391: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 391: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 502: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 391)
+  static void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+              ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+
+[Error li1021]  The following symbols referenced in processor 'p0' could not be resolved:
+        'ourFilter [_ourFilter]' referenced from '.\AudioLoopback.doj'
+
+Linker finished with 1 error 
+cc3089: fatal error: Link failed (code:1)
+make: *** [AudioLoopback_Bypass.dxe] Error 1
+08:22:30 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+
+[Error li1021]  The following symbols referenced in processor 'p0' could not be resolved:
+        'ourFilter [_ourFilter]' referenced from '.\AudioLoopback.doj'
+
+Linker finished with 1 error 
+cc3089: fatal error: Link failed (code:1)
+make: *** [AudioLoopback_Bypass.dxe] Error 1
+08:23:34 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+
+[Error li1021]  The following symbols referenced in processor 'p0' could not be resolved:
+        'ourFilter [_ourFilter]' referenced from '.\AudioLoopback.doj'
+
+Linker finished with 1 error 
+cc3089: fatal error: Link failed (code:1)
+make: *** [AudioLoopback_Bypass.dxe] Error 1
+08:24:09 **** Clean-only build of configuration Debug for project AudioLoopback_Bypass ****
+make clean 
+clean  "./system/startup_ldf/app_cplbtab.doj"  "./system/startup_ldf/app_handler_table.doj"  "./system/startup_ldf/app_heaptab.doj"  "./system/startup_ldf/app_startup.doj"  "./system/pinmux/GeneratedSources/pinmux_config.doj"  "./system/dac/ad1854/adi_ad1854.doj"  "./system/adc/ad1871/adi_ad1871.doj"  "./system/adi_initialize.doj"  "./AudioLoopback.doj" "./system/startup_ldf/app_cplbtab.d"  "./system/startup_ldf/app_handler_table.d"  "./system/startup_ldf/app_heaptab.d"  "./system/pinmux/GeneratedSources/pinmux_config.d"  "./system/dac/ad1854/adi_ad1854.d"  "./system/adc/ad1871/adi_ad1871.d"  "./system/adi_initialize.d"  "./AudioLoopback.d" linker_log.xml  "./system/startup_ldf/app_startup.d" AudioLoopback_Bypass.dxe
+' '
+08:24:10 **** Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../system/startup_ldf/app_cplbtab.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_cplbtab.doj" "../system/startup_ldf/app_cplbtab.c"
+'Finished building: ../system/startup_ldf/app_cplbtab.c'
+' '
+'Building file: ../system/startup_ldf/app_handler_table.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_handler_table.doj" "../system/startup_ldf/app_handler_table.c"
+'Finished building: ../system/startup_ldf/app_handler_table.c'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore Blackfin Assembler'
+easmblkfn.exe -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -si-revision any -g -D_DEBUG -DCORE0 -i"D:\CrossCore\AudioLoopback_Bypass\system" -i"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/pinmux/GeneratedSources/pinmux_config.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/pinmux/GeneratedSources/pinmux_config.d" -o "system/pinmux/GeneratedSources/pinmux_config.doj" "../system/pinmux/GeneratedSources/pinmux_config.c"
+'Finished building: ../system/pinmux/GeneratedSources/pinmux_config.c'
+' '
+'Building file: ../system/dac/ad1854/adi_ad1854.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/dac/ad1854/adi_ad1854.d" -o "system/dac/ad1854/adi_ad1854.doj" "../system/dac/ad1854/adi_ad1854.c"
+'Finished building: ../system/dac/ad1854/adi_ad1854.c'
+' '
+'Building file: ../system/adc/ad1871/adi_ad1871.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/adc/ad1871/adi_ad1871.d" -o "system/adc/ad1871/adi_ad1871.doj" "../system/adc/ad1871/adi_ad1871.c"
+'Finished building: ../system/adc/ad1871/adi_ad1871.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 391: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 391: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 502: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 391)
+  static void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+              ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+
+[Error li1021]  The following symbols referenced in processor 'p0' could not be resolved:
+        'ourFilter [_ourFilter]' referenced from '.\AudioLoopback.doj'
+
+Linker finished with 1 error 
+cc3089: fatal error: Link failed (code:1)
+make: *** [AudioLoopback_Bypass.dxe] Error 1
+08:25:17 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 69: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 185: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 185: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 391: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 391: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 502: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 391)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:25:28 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:27:54 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:29:50 **** Clean-only build of configuration Debug for project AudioLoopback_Bypass ****
+make clean 
+clean  "./system/startup_ldf/app_cplbtab.doj"  "./system/startup_ldf/app_handler_table.doj"  "./system/startup_ldf/app_heaptab.doj"  "./system/startup_ldf/app_startup.doj"  "./system/pinmux/GeneratedSources/pinmux_config.doj"  "./system/dac/ad1854/adi_ad1854.doj"  "./system/adc/ad1871/adi_ad1871.doj"  "./system/adi_initialize.doj"  "./AudioLoopback.doj" "./system/startup_ldf/app_cplbtab.d"  "./system/startup_ldf/app_handler_table.d"  "./system/startup_ldf/app_heaptab.d"  "./system/pinmux/GeneratedSources/pinmux_config.d"  "./system/dac/ad1854/adi_ad1854.d"  "./system/adc/ad1871/adi_ad1871.d"  "./system/adi_initialize.d"  "./AudioLoopback.d" linker_log.xml  "./system/startup_ldf/app_startup.d" AudioLoopback_Bypass.dxe
+' '
+08:29:51 **** Clean-only build of configuration Debug for project AudioLoopback_Bypass ****
+make clean 
+clean  "./system/startup_ldf/app_cplbtab.doj"  "./system/startup_ldf/app_handler_table.doj"  "./system/startup_ldf/app_heaptab.doj"  "./system/startup_ldf/app_startup.doj"  "./system/pinmux/GeneratedSources/pinmux_config.doj"  "./system/dac/ad1854/adi_ad1854.doj"  "./system/adc/ad1871/adi_ad1871.doj"  "./system/adi_initialize.doj"  "./AudioLoopback.doj" "./system/startup_ldf/app_cplbtab.d"  "./system/startup_ldf/app_handler_table.d"  "./system/startup_ldf/app_heaptab.d"  "./system/pinmux/GeneratedSources/pinmux_config.d"  "./system/dac/ad1854/adi_ad1854.d"  "./system/adc/ad1871/adi_ad1871.d"  "./system/adi_initialize.d"  "./AudioLoopback.d" linker_log.xml  "./system/startup_ldf/app_startup.d" AudioLoopback_Bypass.dxe
+' '
+08:29:52 **** Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../system/startup_ldf/app_cplbtab.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_cplbtab.doj" "../system/startup_ldf/app_cplbtab.c"
+'Finished building: ../system/startup_ldf/app_cplbtab.c'
+' '
+'Building file: ../system/startup_ldf/app_handler_table.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_handler_table.doj" "../system/startup_ldf/app_handler_table.c"
+'Finished building: ../system/startup_ldf/app_handler_table.c'
+' '
+'Building file: ../system/startup_ldf/app_heaptab.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/startup_ldf/app_cplbtab.d" -o "system/startup_ldf/app_heaptab.doj" "../system/startup_ldf/app_heaptab.c"
+'Finished building: ../system/startup_ldf/app_heaptab.c'
+' '
+'Building file: ../system/startup_ldf/app_startup.s'
+'Invoking: CrossCore Blackfin Assembler'
+easmblkfn.exe -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -si-revision any -g -D_DEBUG -DCORE0 -i"D:\CrossCore\AudioLoopback_Bypass\system" -i"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -gnu-style-dependencies -MM -Mo "system/startup_ldf/app_startup.d" -o "system/startup_ldf/app_startup.doj" "../system/startup_ldf/app_startup.s"
+'Finished building: ../system/startup_ldf/app_startup.s'
+' '
+'Building file: ../system/pinmux/GeneratedSources/pinmux_config.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/pinmux/GeneratedSources/pinmux_config.d" -o "system/pinmux/GeneratedSources/pinmux_config.doj" "../system/pinmux/GeneratedSources/pinmux_config.c"
+'Finished building: ../system/pinmux/GeneratedSources/pinmux_config.c'
+' '
+'Building file: ../system/dac/ad1854/adi_ad1854.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/dac/ad1854/adi_ad1854.d" -o "system/dac/ad1854/adi_ad1854.doj" "../system/dac/ad1854/adi_ad1854.c"
+'Finished building: ../system/dac/ad1854/adi_ad1854.c'
+' '
+'Building file: ../system/adc/ad1871/adi_ad1871.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/adc/ad1871/adi_ad1871.d" -o "system/adc/ad1871/adi_ad1871.doj" "../system/adc/ad1871/adi_ad1871.c"
+'Finished building: ../system/adc/ad1871/adi_ad1871.c'
+' '
+'Building file: ../system/adi_initialize.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "system/adi_initialize.d" -o "system/adi_initialize.doj" "../system/adi_initialize.c"
+'Finished building: ../system/adi_initialize.c'
+' '
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:30:07 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:31:43 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:31:50 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:39:23 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:40:42 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:41:09 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:41:16 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:41:37 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:41:40 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:46:15 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(&simplify1, &salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(&simplify1, &salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(&simplify2, &salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+"..\AudioLoopback.c", line 510: cc0075:  error: operand of "*" must be a pointer
+  				*output[n] = *output[n] + (response[k]*(*input[n-k]));
+  				 ^
+
+"..\AudioLoopback.c", line 510: cc0075:  error: operand of "*" must be a pointer
+  				*output[n] = *output[n] + (response[k]*(*input[n-k]));
+  				              ^
+
+"..\AudioLoopback.c", line 510: cc0075:  error: operand of "*" must be a pointer
+  				*output[n] = *output[n] + (response[k]*(*input[n-k]));
+  				                                         ^
+
+3 errors detected in the compilation of "..\AudioLoopback.c".
+cc3089: fatal error: Compilation failed (code:2)
+make: *** [AudioLoopback.doj] Error 1
+08:47:52 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(&simplify1, &salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(&simplify1, &salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(&simplify2, &salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract16 input[], fract32 output[], fract16 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:48:02 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:53:25 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 input[], fract32 output[], fract32 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:54:15 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, guardado1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, guardado1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, guardado2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 input[], fract32 output[], fract32 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:57:16 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 input[], fract32 output[], fract32 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+08:58:05 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+08:58:10 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:01:01 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:01:06 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:04:19 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:04:23 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:15:19 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(simplify2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 input[], fract32 output[], fract32 response[]) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+09:17:56 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 *input, fract32 *output, fract32 *response) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+09:18:06 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:21:15 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 *input, fract32 *output, fract32 *response) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+09:21:20 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:26:06 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 *input, fract32 *output, fract32 *response) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+09:26:11 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:28:51 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 *input, fract32 *output, fract32 *response) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+09:29:00 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:30:39 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+'Building file: ../AudioLoopback.c'
+'Invoking: CrossCore Blackfin C/C++ Compiler'
+ccblkfn.exe -c -file-attr ProjectName="AudioLoopback_Bypass" -proc ADSP-BF537 -flags-compiler --no_wrap_diagnostics -si-revision any -O -Ov100 -g -D_DEBUG -DCORE0 -I"C:\Analog Devices\CrossCore Embedded Studio 2.1.0\Blackfin\lib\src\libdsp" -I"D:\CrossCore\AudioLoopback_Bypass\system" -I"C:/Analog Devices/ADSP-BF537_EZKIT-Rel1.0.0/BF537_EZ-KIT_Lite/Blackfin/include" -structs-do-not-overlap -no-const-strings -no-multiline -warn-protos -double-size-32 -decls-strong -no-cplbs -sdram -gnu-style-dependencies -MD -Mo "AudioLoopback.d" -o "AudioLoopback.doj" "../AudioLoopback.c"
+"..\AudioLoopback.c", line 73: cc0047: {D} warning: incompatible redefinition of macro "NUM_COEFFS" (declared at line 33)
+  #define NUM_COEFFS 69
+          ^
+
+"..\AudioLoopback.c", line 189: cc0144: {D} warning: a value of type "int" cannot be used to initialize an entity of type "volatile unsigned int *"
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 189: cc0152: {D} warning: conversion of nonzero integer to pointer
+      volatile unsigned int *ptr_test = 0x30000;
+                                        ^
+
+"..\AudioLoopback.c", line 392: cc0223: {D} warning: function "ourFilter" declared implicitly
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 392: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado1, salida1, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 393: cc1080: {D} warning: Function does not have a full prototype
+                  ourFilter(guardado2, salida2, filter1_fr32);
+                  ^
+
+"..\AudioLoopback.c", line 503: cc0159: {D} warning: declaration is incompatible with previous "ourFilter" (declared at line 392)
+  void ourFilter(fract32 *input, fract32 *output, fract32 *response) {
+       ^
+
+'Finished building: ../AudioLoopback.c'
+' '
+'Building target: AudioLoopback_Bypass.dxe'
+'Invoking: CrossCore Blackfin Linker'
+ccblkfn.exe -proc ADSP-BF537 -si-revision any -TD:/CrossCore/AudioLoopback_Bypass/system/startup_ldf/app.ldf -no-mem -map AudioLoopback_Bypass.map.xml -LD:/CrossCore/AudioLoopback_Bypass/Debug/system/startup_ldf -flags-link -MDDEBUG,-MDCORE0 -add-debug-libpaths -o AudioLoopback_Bypass.dxe ./system/startup_ldf/app_cplbtab.doj ./system/startup_ldf/app_handler_table.doj ./system/startup_ldf/app_heaptab.doj ./system/startup_ldf/app_startup.doj  ./system/pinmux/GeneratedSources/pinmux_config.doj  ./system/dac/ad1854/adi_ad1854.doj  ./system/adc/ad1871/adi_ad1871.doj  ./system/adi_initialize.doj  ./AudioLoopback.doj   ../system/startup_ldf/app.ldf   -flags-link -od,.\.
+'Finished building target: AudioLoopback_Bypass.dxe'
+' '
+09:30:44 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.
+09:33:02 **** Incremental Build of configuration Debug for project AudioLoopback_Bypass ****
+make all 
+make: Nothing to be done for `all'.

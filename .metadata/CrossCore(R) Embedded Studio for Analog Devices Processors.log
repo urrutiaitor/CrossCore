@@ -1,0 +1,2505 @@
+Session started on Monday November 16, 2015 09:33:03AM (Hora estándar romance)
+
+EnableCustomBoardSupport()
+  [I] enable: 0
+  [I] processorType: ADSP-BF537
+  [I] fileName: 
+  [T] 0.00004 seconds
+ConnectWithOptions()
+  [I] Target: Blackfin Emulators/EZ-KIT Lites
+  [I] Platform: ADSP-BF537 EZ-KIT Lite via Debug Agent
+  [I] Processor: ADSP-BF537
+  [I] ProcId: 0 Properties 1
+
+>> StateChange()
+  [I] State: Running
+  [I] Reason: Client Request
+  [I] ProcId: 0
+
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 3.80349 seconds
+Reset()
+  [I] ProcId: 0
+  [I] Wait: 1
+
+>> StateChange()
+  [I] State: Reset
+  [I] Reason: Client Request
+  [I] ProcId: 0
+
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.37524 seconds
+GetProcessorType()
+  [I] procId: 0
+  [O] Processor Type:: ADSP-BF537
+  [T] 0.00003 seconds
+GetSiliconRevision()
+  [I] procId: 0
+  [O] Silicon Revision:: 0.3
+  [T] 0.00002 seconds
+GetProcessorType()
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [O] Processor Type: ADSP-BF537
+  [T] 0.00059 seconds
+GetProgramInfo()
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [O] Toolchain: 3
+  [O] Architecture: Blackfin
+  [O] Processor Type: ADSP-BF537
+  [O] Entry Address: ffa00000
+  [O] Silicon Revision: any
+  [T] 0.00032 seconds
+LoadProgramWithOptions()
+  [I] ProcId: 0
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [I] Properties: 2
+  [I] WorkingDirectory: 
+  [T] 1.25695 seconds
+GetProgramInfo()
+  [I] FileName: D:\CrossCore\AudioLoopback_Bypass\Debug\AudioLoopback_Bypass.dxe
+  [O] Toolchain: 3
+  [O] Architecture: Blackfin
+  [O] Processor Type: ADSP-BF537
+  [O] Entry Address: ffa00000
+  [O] Silicon Revision: any
+  [T] 0.00092 seconds
+RemoveAllBreakpoints()
+  [I] ProcId: 0
+  [T] 0.00010 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __fatal_exception
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.01317 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __primIO
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.01249 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __ov_end
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __ov_end.  Symbol not found.
+**********************************************
+  [T] 0.00017 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: _ov_end
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol _ov_end.  Symbol not found.
+**********************************************
+  [T] 0.00014 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __stack_overflowed
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __stack_overflowed.  Symbol not found.
+**********************************************
+  [T] 0.00014 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: ___lib_prog_term
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.01156 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __dbg_assert
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __dbg_assert.  Symbol not found.
+**********************************************
+  [T] 0.00015 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __fatal_error
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.01202 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: __ov_start
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol __ov_start.  Symbol not found.
+**********************************************
+  [T] 0.00014 seconds
+SetBreakpointAtSymbol()
+  [I] ProcId: 0
+  [I] Symbol: _ov_start
+  [I] Type: 1
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+
+**********************************************
+* ERROR: Failed to set breakpoint at symbol _ov_start.  Symbol not found.
+**********************************************
+  [T] 0.00011 seconds
+GetFunctionBounds()
+  [I] ProcId: 0
+  [I] FunctionName: main
+  [O] TopOfFunction: 0xffa02bf4
+  [O] TopOfBody: 0xffa02bfc
+  [O] EndOfFunction: 0xffa02f90
+  [O] EndOfBody: 0xffa02f90
+  [T] 0.00035 seconds
+SetBreakpointAtAddress()
+  [I] ProcId: 0
+  [I] Address: 0xffa02bfc
+  [I] Type: 0
+  [I] SkipCount: 0
+  [I] Expression: 
+  [I] Temporary: 0
+  [I] Enabled: 1
+  [T] 0.01101 seconds
+Run()
+  [I] ProcId: 0
+  [I] Wait: 0
+  [I] Timeout: 0
+
+>> StateChange()
+  [I] State: Running
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.04526 seconds
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Breakpoint
+  [I] ProcId: 0
+
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] Expression: $PC
+  [I] Format: Hexadecimal
+  [O] Result: 0xffa02bfc
+  [T] 0.00017 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 1
+  [T] 0.04516 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 194
+  [O]   | Address      : 0xffa02bfc
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00013 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+SetActiveStackFrame()
+  [I] ProcId: 0
+  [I] FrameId: 0xff807f90
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 194
+  [O]   | Address      : 0xffa02bfc
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00010 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 194
+  [O]   | Address      : 0xffa02bfc
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00015 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00003 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00116 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00003 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00111 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00002 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00105 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00013 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00003 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00006 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 194
+  [O]   | Address      : 0xffa02bfc
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00014 seconds
+GetMixedAssemblyByAddress()
+  [I] ProcId: 0
+  [I] Start Address: 0xffa02bfc
+  [I] End Address: 0xffa02c28
+  [I] Instruction Type: -1
+  [O] Mixed Instructions Found: 4
+  [T] 0.00878 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00006 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00116 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 194
+  [O]   | Address      : 0xffa02bfc
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00015 seconds
+GetLocalVariables()
+  [I] ProcId: 0
+  [I] FrameId: 0xff807f90
+  [O]   | VariableName : bIsBufAvailable
+  [T] 0.00297 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 1
+  [T] 0.00014 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00003 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00120 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 194
+  [O]   | Address      : 0xffa02bfc
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00011 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00013 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00005 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00007 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 1
+  [T] 0.00008 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(bIsBufAvailable)
+  [I] Format: Hexadecimal
+  [O] Result: bool
+  [T] 0.00015 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(bIsBufAvailable)
+  [I] Format: Hexadecimal
+  [O] Result: bool
+  [T] 0.00009 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: bIsBufAvailable
+  [O] Expression: bIsBufAvailable
+  [T] 0.00006 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(bIsBufAvailable)
+  [I] Format: Hexadecimal
+  [O] Result: bool
+  [T] 0.00005 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: bIsBufAvailable
+  [I] Format: Hexadecimal
+  [O] Result: 0x00 ('\0')
+  [T] 0.00006 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 194
+  [O]   | Address      : 0xffa02bfc
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00013 seconds
+Run()
+  [I] ProcId: 0
+  [I] Wait: 0
+  [I] Timeout: 0
+
+>> StateChange()
+  [I] State: Running
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.04934 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00004 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00122 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00003 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00119 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00003 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00002 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00002 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00006 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00113 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00004 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00002 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 0
+  [T] 0.00002 seconds
+Halt()
+  [I] ProcId: 0
+  [I] Wait: 0
+
+>> StateChange()
+  [I] State: Halted
+  [I] Reason: Client Request
+  [I] ProcId: 0
+  [T] 0.02767 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 7
+  [T] 0.06494 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : ExtendedDispatcher(uint32_t, void *)
+  [O]   | FileName     : C:\Jenkins\workspace\SSLDD Cygnus (2.1.0)\scripts\temp\SSL_temp_Sources_Checkout\blackfin\src\services\int\adi_int_sic.c
+  [O]   | LineNumber   : 120
+  [O]   | Address      : 0xffa0668a
+  [O]   | FrameId      : 0xff807e14
+  [O] Stack Frame: 1
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807ea8
+  [O] Stack Frame: 2
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807ef8
+  [O] Stack Frame: 3
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f00
+  [O] Stack Frame: 4
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807f30
+  [O] Stack Frame: 5
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f38
+  [O] Stack Frame: 6
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 393
+  [O]   | Address      : 0xffa02d98
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00049 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+SetActiveStackFrame()
+  [I] ProcId: 0
+  [I] FrameId: 0xff807e14
+  [T] 0.00004 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : ExtendedDispatcher(uint32_t, void *)
+  [O]   | FileName     : C:\Jenkins\workspace\SSLDD Cygnus (2.1.0)\scripts\temp\SSL_temp_Sources_Checkout\blackfin\src\services\int\adi_int_sic.c
+  [O]   | LineNumber   : 120
+  [O]   | Address      : 0xffa0668a
+  [O]   | FrameId      : 0xff807e14
+  [O] Stack Frame: 1
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807ea8
+  [O] Stack Frame: 2
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807ef8
+  [O] Stack Frame: 3
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f00
+  [O] Stack Frame: 4
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807f30
+  [O] Stack Frame: 5
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f38
+  [O] Stack Frame: 6
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 393
+  [O]   | Address      : 0xffa02d98
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00051 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : ExtendedDispatcher(uint32_t, void *)
+  [O]   | FileName     : C:\Jenkins\workspace\SSLDD Cygnus (2.1.0)\scripts\temp\SSL_temp_Sources_Checkout\blackfin\src\services\int\adi_int_sic.c
+  [O]   | LineNumber   : 120
+  [O]   | Address      : 0xffa0668a
+  [O]   | FrameId      : 0xff807e14
+  [O] Stack Frame: 1
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807ea8
+  [O] Stack Frame: 2
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807ef8
+  [O] Stack Frame: 3
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f00
+  [O] Stack Frame: 4
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807f30
+  [O] Stack Frame: 5
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f38
+  [O] Stack Frame: 6
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 393
+  [O]   | Address      : 0xffa02d98
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00044 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00003 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00116 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00003 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00111 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00002 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00112 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00003 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00017 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00005 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00006 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 7
+  [T] 0.00027 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : ExtendedDispatcher(uint32_t, void *)
+  [O]   | FileName     : C:\Jenkins\workspace\SSLDD Cygnus (2.1.0)\scripts\temp\SSL_temp_Sources_Checkout\blackfin\src\services\int\adi_int_sic.c
+  [O]   | LineNumber   : 120
+  [O]   | Address      : 0xffa0668a
+  [O]   | FrameId      : 0xff807e14
+  [O] Stack Frame: 1
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807ea8
+  [O] Stack Frame: 2
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807ef8
+  [O] Stack Frame: 3
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f00
+  [O] Stack Frame: 4
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807f30
+  [O] Stack Frame: 5
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f38
+  [O] Stack Frame: 6
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 393
+  [O]   | Address      : 0xffa02d98
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00046 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+IsFeatureSupported()
+  [I] procId: 0
+  [I] feature: 0
+  [O] supported: 1
+  [T] 0.00003 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+IsFeatureSupported()
+  [I] procId: 0
+  [I] feature: 0
+  [O] supported: 1
+  [T] 0.00002 seconds
+GetMixedAssemblyByAddress()
+  [I] ProcId: 0
+  [I] Start Address: 0xffa0668a
+  [I] End Address: 0xffa066b6
+  [I] Instruction Type: -1
+  [O] Mixed Instructions Found: 7
+  [T] 0.01092 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00006 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00114 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : ExtendedDispatcher(uint32_t, void *)
+  [O]   | FileName     : C:\Jenkins\workspace\SSLDD Cygnus (2.1.0)\scripts\temp\SSL_temp_Sources_Checkout\blackfin\src\services\int\adi_int_sic.c
+  [O]   | LineNumber   : 120
+  [O]   | Address      : 0xffa0668a
+  [O]   | FrameId      : 0xff807e14
+  [O] Stack Frame: 1
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807ea8
+  [O] Stack Frame: 2
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807ef8
+  [O] Stack Frame: 3
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f00
+  [O] Stack Frame: 4
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807f30
+  [O] Stack Frame: 5
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f38
+  [O] Stack Frame: 6
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 393
+  [O]   | Address      : 0xffa02d98
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00049 seconds
+GetLocalVariables()
+  [I] ProcId: 0
+  [I] FrameId: 0xff807e14
+  [O]   | VariableName : pfExtHandler
+  [O]   | VariableName : pExtSet
+  [O]   | VariableName : i
+  [O]   | VariableName : iid
+  [O]   | VariableName : handlerArg
+  [T] 0.01936 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00004 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00120 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : ExtendedDispatcher(uint32_t, void *)
+  [O]   | FileName     : C:\Jenkins\workspace\SSLDD Cygnus (2.1.0)\scripts\temp\SSL_temp_Sources_Checkout\blackfin\src\services\int\adi_int_sic.c
+  [O]   | LineNumber   : 120
+  [O]   | Address      : 0xffa0668a
+  [O]   | FrameId      : 0xff807e14
+  [O] Stack Frame: 1
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807ea8
+  [O] Stack Frame: 2
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807ef8
+  [O] Stack Frame: 3
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f00
+  [O] Stack Frame: 4
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807f30
+  [O] Stack Frame: 5
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f38
+  [O] Stack Frame: 6
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 393
+  [O]   | Address      : 0xffa02d98
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00043 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00002 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00001 seconds
+IsStepOutEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00010 seconds
+IsStepInEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00003 seconds
+IsStepOverEnabled()
+  [I] ProcId: 0
+  [O] IsEnabled: 1
+  [T] 0.00006 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 7
+  [T] 0.00028 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(pfExtHandler)
+  [I] Format: Hexadecimal
+  [O] Result: void*(uint32_t, void *)
+  [T] 0.00019 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(pExtSet)
+  [I] Format: Hexadecimal
+  [O] Result: struct ExtendedSet*
+  [T] 0.00015 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(i)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00005 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(iid)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00005 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(pfExtHandler)
+  [I] Format: Hexadecimal
+  [O] Result: void*(uint32_t, void *)
+  [T] 0.00008 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(pExtSet)
+  [I] Format: Hexadecimal
+  [O] Result: struct ExtendedSet*
+  [T] 0.00009 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(i)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00008 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(iid)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00008 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: pfExtHandler
+  [O] Expression: pfExtHandler
+  [O]   | Full Child      : *(pfExtHandler)
+  [O]   | Child           : 
+  [T] 0.00006 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: pExtSet
+  [O] Expression: pExtSet
+  [O]   | Full Child      : *(pExtSet)
+  [O]   | Child           : 
+  [T] 0.00006 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: i
+  [O] Expression: i
+  [T] 0.00004 seconds
+GetChildExpressions()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: iid
+  [O] Expression: iid
+  [T] 0.00004 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(pfExtHandler)
+  [I] Format: Hexadecimal
+  [O] Result: void*(uint32_t, void *)
+  [T] 0.00006 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(pExtSet)
+  [I] Format: Hexadecimal
+  [O] Result: struct ExtendedSet*
+  [T] 0.00006 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: $TYPEINFO(i)
+  [I] Format: Hexadecimal
+  [O] Result: unsigned int
+  [T] 0.00007 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: iid
+  [I] Format: Unsigned Integer
+  [O] Result: 2
+  [T] 0.00007 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: pfExtHandler
+  [I] Format: Hexadecimal
+  [O] Result: 0x00000000
+  [T] 0.00006 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: pExtSet
+  [I] Format: Hexadecimal
+  [O] Result: 0xff801280
+  [T] 0.00005 seconds
+EvaluateExpression()
+  [I] ProcId: 0
+  [I] FrameLevel: 0
+  [I] Expression: i
+  [I] Format: Unsigned Integer
+  [O] Result: 6
+  [T] 0.00004 seconds
+GetStackFrameDepth()
+  [I] ProcId: 0
+  [O] Stack Frame Depth: 7
+  [T] 0.00030 seconds
+GetStackFrames()
+  [I] ProcId: 0
+  [I] StartIndex: 0
+  [I] EndIndex: -1
+  [O] Stack Frame: 0
+  [O]   | FunctionName : ExtendedDispatcher(uint32_t, void *)
+  [O]   | FileName     : C:\Jenkins\workspace\SSLDD Cygnus (2.1.0)\scripts\temp\SSL_temp_Sources_Checkout\blackfin\src\services\int\adi_int_sic.c
+  [O]   | LineNumber   : 120
+  [O]   | Address      : 0xffa0668a
+  [O]   | FrameId      : 0xff807e14
+  [O] Stack Frame: 1
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807ea8
+  [O] Stack Frame: 2
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807ef8
+  [O] Stack Frame: 3
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f00
+  [O] Stack Frame: 4
+  [O]   | FunctionName : <__sic_int_dispatcher + 0x8e>
+  [O]   | FileName     : 
+  [O]   | LineNumber   : -1
+  [O]   | Address      : 0xffa0082e
+  [O]   | FrameId      : 0xff807f30
+  [O] Stack Frame: 5
+  [O]   | FunctionName : adi_osal_systemWrapper(uint32_t, int32_t, adi_dispatched_callback_t)
+  [O]   | FileName     : C:\Jenkins\workspace\OSAL no-OS CCES 2.0.0\noos\scripts\temp\OSAL_temp_Sources_Checkout\noos\osal\Ports\Blackfin\CCES\adi_osal_noos_arch_c.c
+  [O]   | LineNumber   : 68
+  [O]   | Address      : 0xffa01ee6
+  [O]   | FrameId      : 0xff807f38
+  [O] Stack Frame: 6
+  [O]   | FunctionName : main()
+  [O]   | FileName     : D:\CrossCore\AudioLoopback_Bypass\AudioLoopback.c
+  [O]   | LineNumber   : 393
+  [O]   | Address      : 0xffa02d98
+  [O]   | FrameId      : 0xff807f90
+  [T] 0.00044 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00005 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00117 seconds
+GetMemoryTypes()
+  [I] ProcId: 0
+  [O] Types Found: 1
+  [T] 0.00008 seconds
+GetSymbolsByName()
+  [I] ProcId: 0
+  [I] Name: guardado1
+  [O] Symbols Found: 1
+  [T] 0.00010 seconds
+GetMemoryTypes()
+  [I] ProcId: 0
+  [O] Types Found: 1
+  [T] 0.00003 seconds
+GetSymbolsByName()
+  [I] ProcId: 0
+  [I] Name: salida1
+  [O] Symbols Found: 1
+  [T] 0.00008 seconds
+GetMemoryTypes()
+  [I] ProcId: 0
+  [O] Types Found: 1
+  [T] 0.00003 seconds
+GetMemory()
+  [I] procId: 0
+  [I] memId: 0
+  [I] address: 0x000000cc
+  [I] locationCount: 65536
+  [I] stride: 1
+  [I] buffer: 0x34976420
+  [I] bufferLength: 65536
+  [O] buffer: 00 00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 00 ff ff ff 00 
+              ff ff ff 00 fb ff ff 00 
+              fb ff ff 00 fb ff ff 00 
+              f7 ff ff 00 02 00 00 00 
+              ef ff ff 00 13 00 00 00 
+              d8 ff ff 00 36 00 00 00 
+              a8 ff ff 00 78 00 00 00 
+              4d ff ff 00 ed 00 00 00 
+              b3 fe ff 00 b3 01 00 00 
+              b8 fd ff 00 ec 02 00 00 
+              35 fc ff 00 c8 04 00 00 
+              f7 f9 ff 00 7e 07 00 00 
+              be f6 ff 00 56 0b 00 00 
+              39 f2 ff 00 a6 10 00 00 
+              02 ec ff 00 e3 17 00 00 
+              96 e3 ff 00 af 21 00 00 
+              2d d8 ff 00 fc 2e 00 00 
+              95 c8 ff 00 5a 41 00 00 
+              c6 b2 ff 00 64 5b 00 00 
+              a9 93 ff 00 21 7f 00 00 
+              3f 73 ff 00 f7 61 00 00 
+              7e 70 00 00 3f 91 60 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              26 1f 7c 00 a4 e5 6c 00 
+              e6 9a 5d 00 04 ca 49 00 
+              b8 74 35 00 6d bb 20 00 
+              8c d9 0c 00 da 9d fc 00 
+              3e 5c ef 00 ae fe e7 00 
+              7b 94 e5 00 d6 a9 e9 00 
+              bf 55 f3 00 b9 47 02 00 
+              6c 73 15 00 40 54 2b 00 
+              99 47 43 00 41 3d 5a 00 
+              2b d5 6f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              a6 60 78 00 49 8b 62 00 
+              2d d2 49 00 9c 1b 2e 00 
+              c0 6f 11 00 52 39 f7 00 
+              7a 48 df 00 7a de ce 00 
+              8c 31 c4 00 19 11 c3 00 
+              6f db c9 00 9f 35 d9 00 
+              78 3c f0 00 64 c1 0d 00 
+              04 81 30 00 6a eb 54 00 
+              d3 98 78 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 76 b1 7c 00 
+              ce bc 7b 00 fa c6 7d 00 
+              bd 3f 60 00 01 34 21 00 
+              cc b8 e1 00 40 2d 96 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              64 08 80 00 8c 42 81 00 
+              d6 88 82 00 fb 1d 84 00 
+              e6 fc 83 00 4b 77 a1 00 
+              f4 13 e9 00 3d bf 2a 00 
+              62 cd 5c 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              4f 07 7a 00 bc c0 59 00 
+              c6 96 34 00 d5 62 0d 00 
+              72 4b e7 00 47 ac c6 00 
+              9a 1e ab 00 73 9a 9a 00 
+              0f b9 92 00 03 7c 96 00 
+              7a a4 a3 00 1b 09 ba 00 
+              ef 70 d7 00 48 2c fa 00 
+              21 14 21 00 8b 20 47 00 
+              4f 60 6d 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 65 02 7e 00 
+              09 b0 7e 00 02 ea 71 00 
+              5a b3 4c 00 7e 90 2c 00 
+              c4 f5 0a 00 f7 dc ec 00 
+              ac be d4 00 cd fa c0 00 
+              cf 9a b7 00 0b a0 b3 00 
+              14 fb b8 00 7b 1f c4 00 
+              11 a7 d5 00 03 cb eb 00 
+              ae 56 04 00 0f e4 1e 00 
+              73 c8 38 00 c2 fd 51 00 
+              fd 21 68 00 3e a3 7b 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 60 c9 7e 00 
+              37 15 7d 00 b2 3d 7b 00 
+              b4 d3 79 00 50 f3 78 00 
+              e5 fa 64 00 40 37 32 00 
+              8b 25 f9 00 f9 a6 bd 00 
+              41 1f 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              96 4e 80 00 00 00 80 00 
+              9d 89 93 00 30 09 c7 00 
+              57 d7 f4 00 0d cd 19 00 
+              42 b3 36 00 c5 7e 43 00 
+              94 6f 48 00 22 4a 3b 00 
+              43 f6 27 00 6c 81 06 00 
+              95 2e e0 00 5d 96 b5 00 
+              2d dc 84 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 2a 40 83 00 
+              0c 2e 81 00 22 02 83 00 
+              da 6c 98 00 4e 57 ce 00 
+              ab 34 09 00 4f 9b 40 00 
+              53 3e 77 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 a5 8a 7d Array too long.  Skipped 64512 elements.
+
+  [T] 0.17895 seconds
+GetMemoryTypes()
+  [I] ProcId: 0
+  [O] Types Found: 1
+  [T] 0.00008 seconds
+GetDisplayFormats()
+  [I] procId: 0
+  [I] formatType: 1
+  [I] bitWidth: 8
+  [O] Format found:: Hexadecimal
+  [O] Format found:: Binary
+  [O] Format found:: Octal
+  [O] Format found:: Signed Integer
+  [O] Format found:: Unsigned Integer
+  [O] Format found:: Floating Point 32 bit
+  [O] Format found:: Signed Fractional
+  [O] Format found:: Unsigned Fractional
+  [O] Format found:: Signed Integer 32 bit
+  [O] Format found:: Signed Integer 16 bit
+  [O] Format found:: Signed Integer 8 bit
+  [O] Format found:: Unsigned Integer 32 bit
+  [O] Format found:: Unsigned Integer 16 bit
+  [O] Format found:: Unsigned Integer 8 bit
+  [O] Format found:: Signed Fractional 32 bit
+  [O] Format found:: Signed Fractional 16 bit
+  [O] Format found:: Signed Fractional 8 bit
+  [O] Format found:: Unsigned Fractional 32 bit
+  [O] Format found:: Unsigned Fractional 16 bit
+  [O] Format found:: Unsigned Fractional 8 bit
+  [O] Format found:: Hex32
+  [O] Format found:: Hex16
+  [O] Format found:: Hex8
+  [O] Format found:: Binary 32 bit
+  [O] Format found:: Binary 16 bit
+  [O] Format found:: Binary 8 bit
+  [O] Format found:: Character
+  [T] 0.00025 seconds
+ConvertToString()
+  [I] procId: 0
+  [I] buffer: 00 00 00 00 00 00 00 00 
+  [I] bitWidth: 8
+  [I] format: Signed Fractional 32 bit
+  [I] sourceType: 0
+  [I] sourceId: 0
+  [I] address: 204
+  [O] result: +0.0
+  [O] words converted: 4
+  [T] 0.00012 seconds
+ConvertToDouble()
+  [I] procId: 0
+  [I] buffer: 00 00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 00 ff ff ff 00 
+              ff ff ff 00 fb ff ff 00 
+              fb ff ff 00 fb ff ff 00 
+              f7 ff ff 00 02 00 00 00 
+              ef ff ff 00 13 00 00 00 
+              d8 ff ff 00 36 00 00 00 
+              a8 ff ff 00 78 00 00 00 
+              4d ff ff 00 ed 00 00 00 
+              b3 fe ff 00 b3 01 00 00 
+              b8 fd ff 00 ec 02 00 00 
+              35 fc ff 00 c8 04 00 00 
+              f7 f9 ff 00 7e 07 00 00 
+              be f6 ff 00 56 0b 00 00 
+              39 f2 ff 00 a6 10 00 00 
+              02 ec ff 00 e3 17 00 00 
+              96 e3 ff 00 af 21 00 00 
+              2d d8 ff 00 fc 2e 00 00 
+              95 c8 ff 00 5a 41 00 00 
+              c6 b2 ff 00 64 5b 00 00 
+              a9 93 ff 00 21 7f 00 00 
+              3f 73 ff 00 f7 61 00 00 
+              7e 70 00 00 3f 91 60 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              26 1f 7c 00 a4 e5 6c 00 
+              e6 9a 5d 00 04 ca 49 00 
+              b8 74 35 00 6d bb 20 00 
+              8c d9 0c 00 da 9d fc 00 
+              3e 5c ef 00 ae fe e7 00 
+              7b 94 e5 00 d6 a9 e9 00 
+              bf 55 f3 00 b9 47 02 00 
+              6c 73 15 00 40 54 2b 00 
+              99 47 43 00 41 3d 5a 00 
+              2b d5 6f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              a6 60 78 00 49 8b 62 00 
+              2d d2 49 00 9c 1b 2e 00 
+              c0 6f 11 00 52 39 f7 00 
+              7a 48 df 00 7a de ce 00 
+              8c 31 c4 00 19 11 c3 00 
+              6f db c9 00 9f 35 d9 00 
+              78 3c f0 00 64 c1 0d 00 
+              04 81 30 00 6a eb 54 00 
+              d3 98 78 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 76 b1 7c 00 
+              ce bc 7b 00 fa c6 7d 00 
+              bd 3f 60 00 01 34 21 00 
+              cc b8 e1 00 40 2d 96 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              64 08 80 00 8c 42 81 00 
+              d6 88 82 00 fb 1d 84 00 
+              e6 fc 83 00 4b 77 a1 00 
+              f4 13 e9 00 3d bf 2a 00 
+              62 cd 5c 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              4f 07 7a 00 bc c0 59 00 
+              c6 96 34 00 d5 62 0d 00 
+              72 4b e7 00 47 ac c6 00 
+              9a 1e ab 00 73 9a 9a 00 
+              0f b9 92 00 03 7c 96 00 
+              7a a4 a3 00 1b 09 ba 00 
+              ef 70 d7 00 48 2c fa 00 
+              21 14 21 00 8b 20 47 00 
+              4f 60 6d 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 65 02 7e 00 
+              09 b0 7e 00 02 ea 71 00 
+              5a b3 4c 00 7e 90 2c 00 
+              c4 f5 0a 00 f7 dc ec 00 
+              ac be d4 00 cd fa c0 00 
+              cf 9a b7 00 0b a0 b3 00 
+              14 fb b8 00 7b 1f c4 00 
+              11 a7 d5 00 03 cb eb 00 
+              ae 56 04 00 0f e4 1e 00 
+              73 c8 38 00 c2 fd 51 00 
+              fd 21 68 00 3e a3 7b 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 60 c9 7e 00 
+              37 15 7d 00 b2 3d 7b 00 
+              b4 d3 79 00 50 f3 78 00 
+              e5 fa 64 00 40 37 32 00 
+              8b 25 f9 00 f9 a6 bd 00 
+              41 1f 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              96 4e 80 00 00 00 80 00 
+              9d 89 93 00 30 09 c7 00 
+              57 d7 f4 00 0d cd 19 00 
+              42 b3 36 00 c5 7e 43 00 
+              94 6f 48 00 22 4a 3b 00 
+              43 f6 27 00 6c 81 06 00 
+              95 2e e0 00 5d 96 b5 00 
+              2d dc 84 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 00 00 80 00 
+              00 00 80 00 2a 40 83 00 
+              0c 2e 81 00 22 02 83 00 
+              da 6c 98 00 4e 57 ce 00 
+              ab 34 09 00 4f 9b 40 00 
+              53 3e 77 00 ff ff 7f 00 
+              ff ff 7f 00 ff ff 7f 00 
+              ff ff 7f 00 a5 8a 7d Array too long.  Skipped 31744 elements.
+
+  [I] memType: ID=0, Width=8, MaxWordCount=8
+  [I] format: Signed Fractional 32 bit
+  [I] address: 0x000000cc
+  [O] result: 0 0 0 0 0 
+              0 0 -1.19209e-007 -1.19209e-007 
+              -5.96046e-007 -5.96046e-007 -5.96046e-007 -1.07288e-006 
+              2.38419e-007 -2.02656e-006 2.26498e-006 -4.76837e-006 
+              6.4373e-006 -1.04904e-005 1.43051e-005 -2.13385e-005 
+              2.82526e-005 -3.96967e-005 5.1856e-005 -6.96182e-005 
+              8.91685e-005 -0.000115752 0.000145912 -0.000184178 
+              0.000228643 -0.000282526 0.000345945 -0.000420451 
+              0.00050807 -0.000610113 0.000728965 -0.000867128 
+              0.00102794 -0.00121534 0.00143385 -0.00169122 
+              0.00199437 -0.00235677 0.00278902 -0.00330627 
+              0.00387967 -0.00429547 0.00298965 0.00343299 
+              0.754433 1 1 1 
+              1 1 1 1 
+              1 1 1 1 
+              1 1 1 0.969701 
+              0.850758 0.73129 0.576478 0.417624 
+              0.25572 0.100389 -0.0264328 -0.129997 
+              -0.18754 -0.206406 -0.174505 -0.0989457 
+              0.0178138 0.167585 0.338509 0.525622 
+              0.704994 0.873693 1 1 
+              1 1 1 0.940449 
+              0.769876 0.576727 0.360218 0.136223 
+              -0.0685632 -0.255601 -0.383836 -0.467238 
+              -0.476041 -0.422991 -0.303051 -0.123155 
+              0.107464 0.378937 0.663434 0.942164 
+              1 1 1 1 
+              0.974166 0.966699 0.982635 0.751945 
+              0.2594 -0.236548 -0.826744 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -0.999744 -0.990157 -0.980199 
+              -0.967835 -0.968845 -0.738547 -0.179079 
+              0.333961 0.725018 1 1 
+              1 1 1 0.953348 
+              0.701194 0.410851 0.104579 -0.19301 
+              -0.447868 -0.663129 -0.792162 -0.853727 
+              -0.82434 -0.721543 -0.546597 -0.316866 
+              -0.0455236 0.258427 0.555681 0.854502 
+              1 1 1 1 
+              1 1 0.984448 0.989747 
+              0.889954 0.599223 0.34816 0.0856252 
+              -0.149507 -0.337931 -0.492346 -0.565588 
+              -0.596678 -0.554838 -0.467789 -0.330839 
+              -0.157867 0.0338953 0.241335 0.443617 
+              0.640557 0.813537 0.965919 1 
+              1 1 1 1 
+              1 1 1 1 
+              1 1 1 1 
+              1 1 1 1 
+              0.99052 0.97721 0.96282 0.951773 
+              0.944925 0.788907 0.392311 -0.0535418 
+              -0.518342 -0.999046 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -0.997602 -1 -0.847363 
+              -0.445032 -0.0871783 0.20157 0.427346 
+              0.527306 0.565905 0.4632 0.312203 
+              0.0508246 -0.248578 -0.581349 -0.962031 
+              -1 -1 -1 -1 
+              -1 -1 -0.974604 -0.990782 
+              -0.976497 -0.809178 -0.387961 0.0719198 
+              0.50474 0.931589 1 1 
+              1 1 0.980794 0.979554 
+              0.955187 0.843351 0.453704 -0.0302795 
+              -0.495221 -0.960244 -1 -1 
+              -1 -1 -1 -1 
+              -0.990898 -0.98123 -0.969042 -0.982964 
+              -0.700546 -0.133929 0.294713 0.821244 
+              1 1 1 1 
+              1 1 1 1 
+              1 1 1 1 
+              1 1 1 1 
+              1 1 1 1 
+              0.999249 0.997753 0.984139 0.984393 
+              0.961933 0.864994 0.668224 0.457271 
+              0.225073 -0.0182432 -0.253782 -0.481363 
+              -0.672607 -0.835549 -0.947733 -1 
+              -1 -0.999026 -0.922769 -0.812318 
+              -0.678802 -0.533858 -0.393838 -0.269452 
+              -0.176582 -0.122021 -0.115905 -0.155784 
+              -0.245458 -0.383165 -0.555901 -0.760923 
+              -0.969353 -1 -1 -1 
+              -1 -1 -1 -0.987221 
+              -0.999879 -0.926173 -0.623978 -0.265153 
+              0.10098 0.482437 0.813487 1 
+              1 1 1 0.970571 
+              0.968915 0.775737 0.347198 -0.124729 
+              -0.663881 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -0.991605 -0.99436 
+              -0.960408 -0.98946 -0.972331 -0.551986 
+              0.0886222 0.628549 1 1 
+              1 1 1 1 
+              0.995314 1 0.986753 1 
+              1 0.809835 0.541979 0.380884 
+              0.258687 0.203801 0.242116 0.327927 
+              0.516707 0.72601 0.993624 1 
+              1 1 1 1 
+              1 1 0.991042 0.988062 
+              0.976769 0.967931 0.965959 0.854574 
+              0.541376 0.190098 -0.0935142 -0.375647 
+              -0.579871 -0.74864 -0.842163 -0.87925 
+              -0.870439 -0.808199 -0.724626 -0.606538 
+              -0.488379 -0.361919 -0.249687 -0.1509 
+              -0.0722549 -0.017547 0.0201976 0.0367234 
+              0.046929 0.0487009 0.0579665 0.0750793 
+              0.111128 0.167217 0.245954 0.346965 
+              0.463432 0.591757 0.71772 0.834125 
+              0.92358 0.977314 0.979579 0.923361 
+              0.804188 0.624547 0.369386 0.0493095 
+              -0.317861 -0.768718 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -0.980867 
+              -1 -0.876902 -0.402464 0.010543 
+              0.313101 0.594262 0.713937 0.794208 
+              0.72402 0.588496 0.385837 0.111924 
+              -0.156974 -0.472619 -0.717002 -0.953837 
+              -1 -1 -1 -0.985465 
+              -0.805954 -0.470491 -0.104244 0.351332 
+              0.821385 1 1 1 
+              1 1 1 0.998156 
+              1 0.974956 0.971625 0.953274 
+              0.961921 0.910393 0.527104 0.00959766 
+              -0.482732 -0.899588 -1 -1 
+              -1 -1 -1 -1 
+              -0.964442 -0.773595 -0.381258 0.00126541 
+              0.392213 0.778785 1 1 
+              1 1 1 1 
+              1 1 1 0.995961 
+              1 0.994121 1 0.922174 
+              0.819552 0.743188 0.676635 0.638888 
+              0.595042 0.565925 0.518132 0.461059 
+              0.37247 0.257836 0.112165 -0.0618833 
+              -0.269915 -0.500821 -0.741822 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -0.932316 -0.836848 
+              -0.811254 -0.812936 -0.88262 -0.980835 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -0.973648 -0.987932 -0.961215 -0.657928 
+              -0.218064 0.217127 0.720384 1 
+              1 1 1 1 
+              1 0.99133 0.971358 0.957409 
+              0.961869 0.959531 0.548668 -0.0696622 
+              -0.583062 -1 -1 -1 
+              -1 -1 -1 -0.986651 
+              -0.983699 -0.966774 -1 -0.696211 
+              -0.117794 0.406193 0.930846 1 
+              1 1 1 1 
+              1 1 1 1 
+              0.999555 0.990307 1 0.931897 
+              0.675272 0.47811 0.341988 0.266664 
+              0.278442 0.342495 0.492429 0.67058 
+              0.906243 1 1 1 
+              1 1 0.99527 0.981107 
+              0.968056 0.956892 0.959802 0.767767 
+              0.413405 0.0547075 -0.324457 -0.684343 
+              -0.995929 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -0.952177 -0.826444 -0.691147 
+              -0.513497 -0.314942 -0.0951223 0.139261 
+              0.364636 0.585669 0.76799 0.916101 
+              1 1 0.966232 0.851569 
+              0.656369 0.395469 0.0646002 -0.294062 
+              -0.713576 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -0.975017 -0.984217 
+              -0.957645 -0.771812 -0.273597 0.199623 
+              0.642027 1 1 1 
+              1 1 1 0.989204 
+              0.98871 0.96765 0.670414 0.362265 
+              0.105438 -0.14028 -0.27548 -0.367689 
+              -0.338943 -0.225542 0.00249088 0.294701 
+              0.701875 1 1 1 
+              1 1 1 1 
+              1 1 0.98914 0.983098 
+              0.959666 0.953075 0.958251 0.953356 
+              0.494823 -0.120298 -0.6359 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -0.917708 -0.637232 -0.313009 
+              -0.0552323 0.178932 0.350065 0.462198 
+              0.520138 0.50662 0.467082 0.373492 
+              0.273705 0.150813 0.0364631 -0.0685692 
+              -0.157395 -0.21533 -0.257046 -0.262761 
+              -0.259826 -0.231786 -0.208159 -0.180507 
+              -0.171423 -0.181039 -0.217706 -0.2846 
+              -0.383541 -0.522474 -0.678943 -0.881484 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -0.94858 -0.731825 -0.548578 
+              -0.416345 -0.301568 -0.26647 -0.255325 
+              -0.318417 -0.410464 -0.533297 -0.678261 
+              -0.803122 -0.931409 -0.98921 -1 
+              -0.967531 -0.859029 -0.662948 -0.385811 
+              -0.0309058 0.376852 0.890525 1 
+              1 1 1 1 
+              1 1 1 1 
+              1 0.984459 0.977368 0.960511 
+              0.995394 0.855609 0.269629 -0.289169 
+              -0.802426 -1 -1 -1 
+              -1 -1 -0.982778 -0.9808 
+              -0.893339 -0.534109 -0.0781287 0.37812 
+              0.82318 1 1 1 
+              1 1 1 0.994134 
+              0.975274 1 0.895812 0.53886 
+              0.194401 -0.0960282 -0.386749 -0.563645 
+              -0.719288 -0.749565 -0.72844 -0.630419 
+              -0.46562 -0.279751 -0.038185 0.17438 
+              0.4083 0.57945 0.728714 0.800266 
+              0.813474 0.753201 0.618874 0.438259 
+              0.183968 -0.100354 -0.420119 -0.766576 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -0.990794 -0.992177 -0.94288 -0.793219 
+              -0.594557 -0.373051 -0.108398 0.178164 
+              0.493771 0.817555 1 1 
+              1 1 1 1 
+              1 1 0.99989 0.979261 
+              0.982476 0.917545 0.580938 0.129388 
+              -0.240481 -0.622777 -0.93938 -1 
+              -1 -1 -1 -0.963875 
+              -0.861874 -0.521484 -0.162439 0.250584 
+              0.684086 1 1 1 
+              1 1 1 1 
+              1 0.989087 0.983706 0.944844 
+              0.646126 0.251961 -0.0592917 -0.341479 
+              -0.538522 -0.638315 -0.654147 -0.542668 
+              -0.36141 -0.0634173 0.282916 0.703982 
+              1 1 1 1 
+              1 1 1 0.988327 
+              0.98618 0.95942 0.966324 0.977614 
+              0.736444 0.177696 -0.449676 -0.951386 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -1 -1 
+              -1 -1 -0.996625 -0.875354 
+              -0.681245 -0.544898 -0.458482 -0.407214 
+              -0.40078 -0.410994 -0.448204 -0.478996 
+              -0.506658 -0.513706 -0.498429 -0.45731 
+              -0.387999 -0.297884 -0.187873 -0.0708826 
+              0.0481368 0.15559 0.24458 0.304863 
+              0.331029 0.319016 0.267707 0.180238 
+              0.061193 -0.080229 -0.234557 -0.389169 
+              -0.532439 -0.652022 -0.737555 Array too long.  Skipped 7168 elements.
+
+  [T] 0.05929 seconds
+GetMemory()
+  [I] procId: 0
+  [I] memId: 0
+  [I] address: 0x000100cc
+  [I] locationCount: 65536
+  [I] stride: 1
+  [I] buffer: 0x32570040
+  [I] bufferLength: 65536
+  [O] buffer: 00 00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 ea fa ff ff 3e 
+              fa ff ff 97 f9 ff ff 02 
+              f9 ff ff 8c f8 ff ff 44 
+              f8 ff ff 4e fd ff ff 22 
+              f9 ff ff ca fe ff ff 4b 
+              fb ff ff ad 01 00 00 f0 
+              fe ff ff 1a 06 00 00 0f 
+              ff ff ff 7c 10 00 00 b3 
+              00 00 00 72 21 00 00 59 
+              ff ff ff b6 33 00 00 0a 
+              fa ff ff 67 50 00 00 f1 
+              eb ff ff 02 72 00 00 07 
+              d9 ff ff 40 a2 00 00 0c 
+              38 ff ff b8 60 00 00 95 
+              08 ff ff fa ac 00 00 fd 
+              bf fe ff 75 14 01 00 6c 
+              d9 fe ff cd 96 01 00 6b 
+              4a fe ff dd 4b 02 00 6f 
+              7b fd ff 9e 46 03 00 6d 
+              54 fc ff 9b 1e 04 00 3e 
+              a3 fb ff 9d 5f 02 00 3e 
+              75 06 00 99 dc d4 03 ea 
+              52 9b 05 0c f8 3c 06 94 
+              c3 de 06 77 2b 51 07 15 
+              b9 b1 07 ae a1 bb 07 95 
+              f0 a3 07 b5 55 09 07 c7 
+              69 43 06 38 9e ca 04 65 
+              41 27 03 79 d2 9f 00 79 
+              59 00 fe 88 dc 49 fa 4e 
+              28 7a f6 8e e1 e4 f0 23 
+              e0 8c eb b0 95 67 e4 14 
+              61 e2 dd ac cb 67 d5 67 
+              9a 3c ce a0 a2 ed c4 9c 
+              1a 89 bd 96 1b 79 b5 4a 
+              0a d2 0d 71 7a 0b 26 ef 
+              5e 8d 1f 94 91 f0 19 47 
+              2b 52 15 f0 b2 c6 11 bd 
+              bd 60 0f 7d c3 16 0e ad 
+              a1 e9 0d 9e 7a b2 0e 53 
+              4c f0 0f 60 b0 26 12 3c 
+              70 37 15 8e f8 0a 19 27 
+              f5 28 1d e8 14 47 1d 19 
+              64 16 12 73 c4 bd 06 ce 
+              69 9f f6 fb 9c cc e5 32 
+              9d 2e d4 ed e7 3d c3 b0 
+              9d 89 b5 e0 f1 ae aa 60 
+              30 73 a5 b7 cb 56 a8 11 
+              31 ee ae de a8 e0 b9 c8 
+              be 30 ca b4 80 cc de 3e 
+              e1 2f f6 15 ec b1 0e e3 
+              63 ff 25 2c cb 04 3c 8f 
+              b6 b9 4c d0 e7 43 4d 99 
+              12 04 4e 93 7e 01 4f f6 
+              9e da 4e d4 c0 a8 45 b3 
+              46 ca 2d ba 49 d4 11 72 
+              f8 a1 f4 45 9d 1c d7 97 
+              3b 17 bc 19 cc 67 a3 8c 
+              d3 60 92 3c a9 57 87 42 
+              70 19 86 1e 78 26 8d 64 
+              2d 23 9d 58 31 43 b5 11 
+              e5 5b d4 35 ca 41 f9 b6 
+              6a 60 20 f0 21 59 47 21 
+              a1 9b 52 74 e1 3a 58 58 
+              70 55 60 af e6 25 69 7a 
+              90 9e 6e a1 58 f4 76 bc 
+              45 d0 81 f9 90 b4 6d fe 
+              ab 3b 38 14 91 13 02 9f 
+              47 99 bf 0f 84 24 b1 a0 
+              36 0a b8 72 31 0e be 7a 
+              43 09 c3 fa 44 1e c7 27 
+              85 0a ca 77 8a 0c cc 72 
+              96 ef cc 70 86 d8 cc 8f 
+              1a bd cb f3 a1 ba c9 96 
+              16 09 c8 c2 d4 89 c5 0b 
+              fd a0 c2 ff 56 6b bc 4d 
+              1b 63 d3 c8 a1 cd 13 80 
+              29 be 4d 39 48 3e 78 f2 
+              19 6e 94 a5 b1 19 8e dd 
+              be 55 87 06 db 31 80 59 
+              b2 28 7a 30 20 2b 6e 14 
+              91 9a 49 32 3d 74 21 fd 
+              0b 56 f7 8e ac 79 ce 2e 
+              f0 3d ab 0f 39 1d 8d 12 
+              24 41 7a 9f ef 13 70 db 
+              07 c0 71 1d 50 ee 7c 93 
+              ae 89 91 0a 91 61 ad 89 
+              5f b8 ce 1a fb 76 f4 23 
+              de 7a 19 95 f1 f8 3f 0a 
+              fe 5e 54 ff a1 e2 55 14 
+              57 68 56 12 6a 77 56 4e 
+              ba a2 55 3c 70 55 55 54 
+              b3 90 53 de 25 f5 54 49 
+              90 1f 49 a1 e4 50 24 76 
+              85 d0 04 4f 65 0e e4 51 
+              cc f8 c6 92 c3 02 b0 6f 
+              ba 54 9d e8 81 fc 94 1a 
+              2e b2 91 a3 78 55 97 0b 
+              4b 1f a2 cd 72 82 b2 d9 
+              a1 98 c6 db 70 1e dc b9 
+              5c b3 f2 8d 58 95 07 56 
+              2d 25 1a 94 dc e7 26 de 
+              bd 6a 2f b2 31 37 28 50 
+              0b 4b 1c d9 9b be 12 a0 
+              49 b2 09 b7 ab 51 01 42 
+              14 03 fa 45 70 6a f3 ba 
+              49 66 ed d8 8f 40 e9 1a 
+              d4 d3 e6 3c c2 5e e6 49 
+              d7 f9 e7 89 f0 8c eb ec 
+              55 41 f1 4d 84 c2 f8 6e 
+              98 e4 02 bb 73 f4 0f f0 
+              dc 42 1d 45 00 20 2b df 
+              07 98 39 b8 06 a2 48 fa 
+              e4 41 58 fb 7f 24 54 1c 
+              68 a2 30 e2 4d a6 05 10 
+              6a b2 d6 c8 40 64 a4 47 
+              58 0c ae 5e 58 2a b8 0a 
+              1e 2d c1 cd 7b d4 c8 1c 
+              38 14 cf ee 6a e9 d3 d2 
+              28 5a d7 34 13 97 d9 12 
+              07 66 da 0d 31 3e da 0f 
+              44 eb d9 19 c0 85 da 8e 
+              93 65 da b4 c8 de ed b3 
+              55 51 21 51 27 62 4d 6c 
+              5c 49 70 e0 af 32 8b 35 
+              cd 25 96 f8 e7 4f 99 Array too long.  Skipped 64512 elements.
+
+  [T] 0.17625 seconds
+GetMemoryTypes()
+  [I] ProcId: 0
+  [O] Types Found: 1
+  [T] 0.00013 seconds
+GetDisplayFormats()
+  [I] procId: 0
+  [I] formatType: 1
+  [I] bitWidth: 8
+  [O] Format found:: Hexadecimal
+  [O] Format found:: Binary
+  [O] Format found:: Octal
+  [O] Format found:: Signed Integer
+  [O] Format found:: Unsigned Integer
+  [O] Format found:: Floating Point 32 bit
+  [O] Format found:: Signed Fractional
+  [O] Format found:: Unsigned Fractional
+  [O] Format found:: Signed Integer 32 bit
+  [O] Format found:: Signed Integer 16 bit
+  [O] Format found:: Signed Integer 8 bit
+  [O] Format found:: Unsigned Integer 32 bit
+  [O] Format found:: Unsigned Integer 16 bit
+  [O] Format found:: Unsigned Integer 8 bit
+  [O] Format found:: Signed Fractional 32 bit
+  [O] Format found:: Signed Fractional 16 bit
+  [O] Format found:: Signed Fractional 8 bit
+  [O] Format found:: Unsigned Fractional 32 bit
+  [O] Format found:: Unsigned Fractional 16 bit
+  [O] Format found:: Unsigned Fractional 8 bit
+  [O] Format found:: Hex32
+  [O] Format found:: Hex16
+  [O] Format found:: Hex8
+  [O] Format found:: Binary 32 bit
+  [O] Format found:: Binary 16 bit
+  [O] Format found:: Binary 8 bit
+  [O] Format found:: Character
+  [T] 0.00040 seconds
+ConvertToString()
+  [I] procId: 0
+  [I] buffer: 00 00 00 00 00 00 00 00 
+  [I] bitWidth: 8
+  [I] format: Signed Fractional 32 bit
+  [I] sourceType: 0
+  [I] sourceId: 0
+  [I] address: 65740
+  [O] result: +0.0
+  [O] words converted: 4
+  [T] 0.00021 seconds
+ConvertToDouble()
+  [I] procId: 0
+  [I] buffer: 00 00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 00 00 00 00 00 
+              00 00 00 ea fa ff ff 3e 
+              fa ff ff 97 f9 ff ff 02 
+              f9 ff ff 8c f8 ff ff 44 
+              f8 ff ff 4e fd ff ff 22 
+              f9 ff ff ca fe ff ff 4b 
+              fb ff ff ad 01 00 00 f0 
+              fe ff ff 1a 06 00 00 0f 
+              ff ff ff 7c 10 00 00 b3 
+              00 00 00 72 21 00 00 59 
+              ff ff ff b6 33 00 00 0a 
+              fa ff ff 67 50 00 00 f1 
+              eb ff ff 02 72 00 00 07 
+              d9 ff ff 40 a2 00 00 0c 
+              38 ff ff b8 60 00 00 95 
+              08 ff ff fa ac 00 00 fd 
+              bf fe ff 75 14 01 00 6c 
+              d9 fe ff cd 96 01 00 6b 
+              4a fe ff dd 4b 02 00 6f 
+              7b fd ff 9e 46 03 00 6d 
+              54 fc ff 9b 1e 04 00 3e 
+              a3 fb ff 9d 5f 02 00 3e 
+              75 06 00 99 dc d4 03 ea 
+              52 9b 05 0c f8 3c 06 94 
+              c3 de 06 77 2b 51 07 15 
+              b9 b1 07 ae a1 bb 07 95 
+              f0 a3 07 b5 55 09 07 c7 
+              69 43 06 38 9e ca 04 65 
+              41 27 03 79 d2 9f 00 79 
+              59 00 fe 88 dc 49 fa 4e 
+              28 7a f6 8e e1 e4 f0 23 
+              e0 8c eb b0 95 67 e4 14 
+              61 e2 dd ac cb 67 d5 67 
+              9a 3c ce a0 a2 ed c4 9c 
+              1a 89 bd 96 1b 79 b5 4a 
+              0a d2 0d 71 7a 0b 26 ef 
+              5e 8d 1f 94 91 f0 19 47 
+              2b 52 15 f0 b2 c6 11 bd 
+              bd 60 0f 7d c3 16 0e ad 
+              a1 e9 0d 9e 7a b2 0e 53 
+              4c f0 0f 60 b0 26 12 3c 
+              70 37 15 8e f8 0a 19 27 
+              f5 28 1d e8 14 47 1d 19 
+              64 16 12 73 c4 bd 06 ce 
+              69 9f f6 fb 9c cc e5 32 
+              9d 2e d4 ed e7 3d c3 b0 
+              9d 89 b5 e0 f1 ae aa 60 
+              30 73 a5 b7 cb 56 a8 11 
+              31 ee ae de a8 e0 b9 c8 
+              be 30 ca b4 80 cc de 3e 
+              e1 2f f6 15 ec b1 0e e3 
+              63 ff 25 2c cb 04 3c 8f 
+              b6 b9 4c d0 e7 43 4d 99 
+              12 04 4e 93 7e 01 4f f6 
+              9e da 4e d4 c0 a8 45 b3 
+              46 ca 2d ba 49 d4 11 72 
+              f8 a1 f4 45 9d 1c d7 97 
+              3b 17 bc 19 cc 67 a3 8c 
+              d3 60 92 3c a9 57 87 42 
+              70 19 86 1e 78 26 8d 64 
+              2d 23 9d 58 31 43 b5 11 
+              e5 5b d4 35 ca 41 f9 b6 
+              6a 60 20 f0 21 59 47 21 
+              a1 9b 52 74 e1 3a 58 58 
+              70 55 60 af e6 25 69 7a 
+              90 9e 6e a1 58 f4 76 bc 
+              45 d0 81 f9 90 b4 6d fe 
+              ab 3b 38 14 91 13 02 9f 
+              47 99 bf 0f 84 24 b1 a0 
+              36 0a b8 72 31 0e be 7a 
+              43 09 c3 fa 44 1e c7 27 
+              85 0a ca 77 8a 0c cc 72 
+              96 ef cc 70 86 d8 cc 8f 
+              1a bd cb f3 a1 ba c9 96 
+              16 09 c8 c2 d4 89 c5 0b 
+              fd a0 c2 ff 56 6b bc 4d 
+              1b 63 d3 c8 a1 cd 13 80 
+              29 be 4d 39 48 3e 78 f2 
+              19 6e 94 a5 b1 19 8e dd 
+              be 55 87 06 db 31 80 59 
+              b2 28 7a 30 20 2b 6e 14 
+              91 9a 49 32 3d 74 21 fd 
+              0b 56 f7 8e ac 79 ce 2e 
+              f0 3d ab 0f 39 1d 8d 12 
+              24 41 7a 9f ef 13 70 db 
+              07 c0 71 1d 50 ee 7c 93 
+              ae 89 91 0a 91 61 ad 89 
+              5f b8 ce 1a fb 76 f4 23 
+              de 7a 19 95 f1 f8 3f 0a 
+              fe 5e 54 ff a1 e2 55 14 
+              57 68 56 12 6a 77 56 4e 
+              ba a2 55 3c 70 55 55 54 
+              b3 90 53 de 25 f5 54 49 
+              90 1f 49 a1 e4 50 24 76 
+              85 d0 04 4f 65 0e e4 51 
+              cc f8 c6 92 c3 02 b0 6f 
+              ba 54 9d e8 81 fc 94 1a 
+              2e b2 91 a3 78 55 97 0b 
+              4b 1f a2 cd 72 82 b2 d9 
+              a1 98 c6 db 70 1e dc b9 
+              5c b3 f2 8d 58 95 07 56 
+              2d 25 1a 94 dc e7 26 de 
+              bd 6a 2f b2 31 37 28 50 
+              0b 4b 1c d9 9b be 12 a0 
+              49 b2 09 b7 ab 51 01 42 
+              14 03 fa 45 70 6a f3 ba 
+              49 66 ed d8 8f 40 e9 1a 
+              d4 d3 e6 3c c2 5e e6 49 
+              d7 f9 e7 89 f0 8c eb ec 
+              55 41 f1 4d 84 c2 f8 6e 
+              98 e4 02 bb 73 f4 0f f0 
+              dc 42 1d 45 00 20 2b df 
+              07 98 39 b8 06 a2 48 fa 
+              e4 41 58 fb 7f 24 54 1c 
+              68 a2 30 e2 4d a6 05 10 
+              6a b2 d6 c8 40 64 a4 47 
+              58 0c ae 5e 58 2a b8 0a 
+              1e 2d c1 cd 7b d4 c8 1c 
+              38 14 cf ee 6a e9 d3 d2 
+              28 5a d7 34 13 97 d9 12 
+              07 66 da 0d 31 3e da 0f 
+              44 eb d9 19 c0 85 da 8e 
+              93 65 da b4 c8 de ed b3 
+              55 51 21 51 27 62 4d 6c 
+              5c 49 70 e0 af 32 8b 35 
+              cd 25 96 f8 e7 4f 99 Array too long.  Skipped 31744 elements.
+
+  [I] memType: ID=0, Width=8, MaxWordCount=8
+  [I] format: Signed Fractional 32 bit
+  [I] address: 0x000100cc
+  [O] result: 0 0 0 0 0 
+              0 0 -6.06291e-007 -6.86385e-007 
+              -7.6415e-007 -8.33534e-007 -8.88482e-007 -9.22009e-007 
+              -3.21306e-007 -8.18633e-007 -1.44355e-007 -5.61122e-007 
+              1.99769e-007 -1.2666e-007 7.27363e-007 -1.12224e-007 
+              1.96509e-006 8.33534e-008 3.98699e-006 -7.77654e-008 
+              6.16442e-006 -7.10599e-007 9.58471e-006 -2.39117e-006 
+              1.35908e-005 -4.6459e-006 1.93417e-005 -2.38363e-005 
+              1.15298e-005 -2.94945e-005 2.06204e-005 -3.81484e-005 
+              3.29562e-005 -3.51164e-005 4.84944e-005 -5.21638e-005 
+              7.00788e-005 -7.68383e-005 9.9971e-005 -0.000112006 
+              0.000125719 -0.000133128 7.24331e-005 0.000197082 
+              0.0299335 0.0438026 0.0487356 0.0536732 
+              0.0571646 0.0601112 0.0604136 0.0596905 
+              0.0549724 0.0489323 0.0374334 0.0246355 
+              0.00487739 -0.0156143 -0.0446209 -0.0743971 
+              -0.118015 -0.159763 -0.215589 -0.266529 
+              -0.33277 -0.388776 -0.461498 -0.519253 
+              -0.582242 0.107972 0.297225 0.246502 
+              0.202654 0.16657 0.138876 0.12014 
+              0.11007 0.108692 0.114822 0.124521 
+              0.141806 0.165754 0.195647 0.227812 
+              0.228732 0.141308 0.0526662 -0.0732601 
+              -0.204693 -0.342327 -0.474673 -0.581738 
+              -0.666536 -0.707422 -0.684851 -0.633356 
+              -0.547831 -0.420387 -0.259384 -0.0766638 
+              0.114805 0.296856 0.468896 0.599418 
+              0.603635 0.609499 0.617233 0.616047 
+              0.544212 0.357735 0.139291 -0.0888071 
+              -0.319439 -0.530541 -0.723395 -0.85642 
+              -0.942637 -0.952349 -0.897264 -0.772364 
+              -0.583887 -0.340946 -0.0526798 0.252942 
+              0.557408 0.645374 0.689297 0.752607 
+              0.821469 0.864214 0.929332 -0.985832 
+              0.857073 0.439321 0.0162221 -0.503135 
+              -0.616073 -0.562188 -0.515192 -0.47628 
+              -0.444389 -0.421554 -0.405867 -0.398938 
+              -0.399642 -0.408292 -0.423992 -0.437223 
+              -0.456731 -0.479462 -0.527974 -0.348538 
+              0.154713 0.607366 0.939401 -0.84039 
+              -0.889841 -0.942696 -0.998479 0.954367 
+              0.860691 0.57503 0.26136 -0.0676866 
+              -0.386912 -0.662172 -0.897546 0.955113 
+              0.875608 0.888673 0.976023 -0.862986 
+              -0.64546 -0.384998 -0.090119 0.199062 
+              0.499785 0.659149 0.670979 0.675059 
+              0.675519 0.669029 0.66667 0.652853 
+              0.663731 0.571276 0.283719 0.0376136 
+              -0.218311 -0.445532 -0.624916 -0.770852 
+              -0.836044 -0.86175 -0.817704 -0.73342 
+              -0.605394 -0.448467 -0.280321 -0.103901 
+              0.0592452 0.20426 0.303951 0.370445 
+              0.314184 0.22104 0.146442 0.0757534 
+              0.0103049 -0.046781 -0.0983143 -0.145316 
+              -0.177717 -0.196661 -0.200233 -0.187688 
+              -0.159761 -0.115194 -0.0565638 0.0226012 
+              0.124648 0.228603 0.336914 0.449952 
+              0.567445 0.689511 0.657364 0.379956 
+              0.0441377 -0.32268 -0.715691 -0.640248 
+              -0.561208 -0.490811 -0.431016 -0.382195 
+              -0.344439 -0.317561 -0.300077 -0.293761 
+              -0.294977 -0.297508 -0.292793 -0.293775 
+              -0.141639 0.260295 0.604558 0.877239 
+              -0.912516 -0.826971 -0.802249 -0.922256 
+              0.901812 0.612447 0.274448 -0.102574 
+              -0.512972 -0.586672 -0.612116 -0.640611 
+              -0.673472 -0.710434 -0.751028 -0.769215 
+              -0.83075 -0.862884 -0.741798 -0.366415 
+              0.061749 0.484931 0.912742 0.991165 
+              0.9934 0.993963 0.997424 0.987396 
+              0.998173 0.991844 0.901034 0.536995 
+              0.081754 -0.353662 -0.776771 -0.776639 
+              -0.742277 -0.715305 -0.697346 -0.689744 
+              -0.69267 -0.700204 -0.718546 -0.741723 
+              -0.795223 -0.564455 -0.0631752 0.290008 
+              0.719297 0.790737 0.676723 0.560909 
+              0.444264 0.330403 0.220382 0.11392 
+              0.00766163 -0.0894375 -0.170932 -0.23624 
+              -0.270149 -0.28959 -0.29295 -0.281432 
+              -0.25544 -0.215668 -0.162934 -0.0987924 
+              -0.0248597 0.055527 0.151725 0.248952 
+              0.3555 0.442241 0.440617 0.331645 
+              0.207862 0.0682207 -0.0831515 -0.229383 
+              -0.371194 -0.480969 -0.567425 -0.608092 
+              -0.595628 -0.533597 -0.467254 -0.327795 
+              -0.157834 0.0320577 0.227818 0.40916 
+              0.562932 0.679562 0.752103 0.769086 
+              0.734516 0.63683 0.473525 0.262196 
+              0.00384087 -0.258719 -0.337796 -0.391169 
+              -0.448123 -0.507957 -0.568886 -0.630437 
+              -0.678167 -0.749083 -0.730374 -0.481429 
+              -0.168329 0.155366 0.502452 0.822376 
+              -0.983651 -0.968622 -0.949205 -0.93438 
+              -0.94135 -0.913464 0.928943 0.540831 
+              0.112895 -0.379932 -0.669457 -0.616972 
+              -0.568259 -0.533751 -0.511935 -0.497583 
+              -0.494178 -0.500861 -0.51813 -0.534985 
+              -0.563678 -0.565374 -0.638949 -0.685814 
+              -0.340756 0.212434 0.654149 0.925946 
+              0.82681 0.728977 0.635841 0.541644 
+              0.446407 0.354408 0.279619 0.19986 
+              0.158603 0.107835 -0.125774 -0.43243 
+              -0.624985 -0.77283 -0.846028 -0.819178 
+              -0.737864 -0.54678 -0.327544 -0.0452769 
+              -0.0165631 0.0260214 0.0798319 0.132967 
+              0.183622 0.225638 0.273933 0.319093 
+              0.376136 0.430058 0.491287 0.563863 
+              0.529914 0.29766 0.0282895 -0.179726 
+              -0.389281 -0.518727 -0.61539 -0.640421 
+              -0.614131 -0.550736 -0.442762 -0.326906 
+              -0.18965 -0.0770989 0.0283568 0.104847 
+              0.154199 0.16898 0.158281 0.132238 
+              0.0801823 0.0195595 -0.0502249 -0.110762 
+              -0.159521 -0.187553 -0.19461 -0.169934 
+              -0.108875 -0.0200137 0.0962582 0.224917 
+              0.357831 0.483304 0.600553 0.678616 
+              0.705928 0.680055 0.594906 0.437942 
+              0.212345 -0.0634375 -0.428703 -0.58283 
+              -0.513078 -0.454617 -0.403923 -0.364396 
+              -0.328991 -0.302967 -0.287673 -0.282349 
+              -0.280355 -0.280399 -0.285795 -0.292895 
+              -0.284232 -0.328069 -0.240243 0.195553 
+              0.567202 0.826652 -0.936202 -0.860598 
+              -0.824209 -0.938554 0.883957 0.638646 
+              0.333152 0.0388926 -0.316955 -0.611047 
+              -0.902082 0.994835 0.945106 0.895919 
+              0.8589 0.985272 -0.733097 -0.420237 
+              -0.0150009 0.414713 0.564874 0.548746 
+              0.553349 0.563309 0.57175 0.579876 
+              0.589024 0.609646 0.607123 0.632927 
+              0.649408 0.697263 0.690455 0.353371 
+              -0.11394 -0.557597 -0.922485 -0.979434 
+              -0.946302 -0.92266 -0.905094 -0.894695 
+              -0.898074 -0.876758 -0.714565 -0.374487 
+              -0.0618928 0.250279 0.550698 0.680317 
+              0.584972 0.488204 0.392758 0.299356 
+              0.222726 0.154566 0.0982213 0.052098 
+              0.00432172 -0.023714 -0.0434654 -0.0317982 
+              -0.0766854 -0.129019 -0.142649 -0.135086 
+              -0.0885671 -0.0394002 0.0357115 0.104555 
+              0.172082 0.207664 0.214327 0.186606 
+              0.124654 0.0187829 -0.11273 -0.258072 
+              -0.42512 -0.339313 -0.259454 -0.186062 
+              -0.118464 -0.0595676 -0.00601424 0.0511318 
+              0.108709 0.158687 0.206559 0.243033 
+              0.263928 0.27929 0.287513 0.356802 
+              0.445836 0.456814 0.431288 0.329331 
+              0.190773 0.122474 0.0484124 -0.0441663 
+              -0.143264 -0.248479 -0.336231 -0.43001 
+              -0.52839 -0.603442 -0.720364 -0.795135 
+              -0.59109 -0.245373 0.100272 0.535515 
+              0.769605 0.736462 0.718673 0.69873 
+              0.691987 0.698706 0.70598 0.71193 
+              0.73123 0.776251 0.823605 0.466938 
+              -0.0957869 -0.554785 -0.919757 -0.876185 
+              -0.847857 -0.827694 -0.81584 -0.81545 
+              -0.809412 -0.814607 -0.811031 -0.869365 
+              -0.597316 -0.0737027 0.374561 0.818665 
+              0.804261 0.719492 0.635084 0.552167 
+              0.472526 0.398157 0.331042 0.262869 
+              0.180673 0.0986819 0.0196163 -0.0284487 
+              -0.130767 -0.40431 -0.611712 -0.751646 
+              -0.824464 -0.803502 -0.724504 -0.553014 
+              -0.348986 -0.0695337 0.0821875 0.141832 
+              0.205717 0.258445 0.315938 0.376244 
+              0.434465 0.500869 0.575715 0.670546 
+              0.575515 0.324176 0.074911 -0.192189 
+              -0.436273 -0.633694 -0.529964 -0.420706 
+              -0.312693 -0.207709 -0.108099 -0.0170098 
+              0.0637518 0.129509 0.181784 0.210701 
+              0.217835 0.206906 0.177502 0.13133 
+              0.0675212 -0.00559567 -0.0793746 -0.161909 
+              -0.250784 -0.351175 -0.410993 -0.391774 
+              -0.360433 -0.28081 -0.170782 -0.0218875 
+              0.151139 0.331019 0.530487 0.704289 
+              0.85711 0.956687 0.971627 0.963516 
+              0.883974 0.731796 0.520037 0.241986 
+              -0.0615475 -0.427036 -0.673037 -0.6393 
+              -0.611852 -0.593756 -0.582361 -0.579094 
+              -0.580362 -0.589819 -0.604394 -0.600748 
+              -0.634728 -0.643728 -0.511733 -0.0736281 
+              0.33365 0.706298 0.991483 0.916868 
+              0.843951 0.772438 0.703209 0.638356 
+              0.566729 0.512496 0.443338 0.109293 
+              -0.238233 -0.539738 -0.826836 -0.998122 
+              0.887796 0.896249 0.991039 -0.7976 
+              -0.518919 -0.12382 0.166815 0.168689 
+              0.185204 0.207325 0.241065 0.280711 
+              0.313999 0.357072 0.408422 0.456839 
+              0.517301 0.565383 0.636352 0.721333 
+              0.789722 0.405869 -0.131856 -0.571053 
+              -0.858058 -0.784468 -0.714013 -0.649097 
+              -0.59104 -0.542097 -0.502099 -0.47887 
+              -0.478746 -0.489254 -0.42755 -0.176863 
+              0.109449 0.322154 0.506283 0.622825 
+              0.682034 0.692777 0.634539 0.555561 
+              0.428921 0.30284 0.146091 0.00345273 
+              -0.114527 -0.199908 -0.231832 -0.240014 
+              -0.205325 -0.153814 -0.0651103 0.0233529 
+              0.118107 0.196529 0.254755 0.287863 
+              0.292978 0.262322 0.182819 0.0782064 
+              -0.0802446 -0.163217 -0.133054 -0.10924 
+              -0.0897171 -0.0736721 -0.0581232 -0.0431946 
+              -0.0271361 -0.0103357 0.00992713 0.0144131 
+              0.0119495 0.0067171 0.0487871 0.252436 
+              0.417464 0.526541 0.612282 0.61244 
+              0.58246 0.471371 0.325364 0.141817 
+              -0.0672602 -0.269226 -0.494471 -0.651674 
+              -0.767694 -0.834526 -0.821268 -0.721764 
+              -0.540977 -0.280478 0.0372605 0.465857 
+              0.500868 0.446547 0.40837 0.386048 
+              0.383747 0.38406 0.388943 0.405644 
+              0.431434 0.467617 0.495674 0.539597 
+              0.578994 0.675797 0.596195 0.0597035 
+              -0.450941 -0.919081 0.921258 0.955868 
+              0.983054 -0.994167 -0.978627 -0.952614 
+              -0.946055 -0.876542 -0.542513 -0.116062 
+              0.309861 0.722184 0.866738 0.833993 
+              0.802362 0.77194 0.743103 0.716575 
+              0.686409 0.646298 0.654603 0.530762 
+              0.147518 -0.206392 -0.497714 -0.772433 
+              -0.922975 0.949585 0.94874 -0.999962 
+              -0.870773 -0.67525 -0.455669 -0.171341 
+              0.0859036 0.363087 0.576366 0.758548 
+              0.859048 0.904786 0.881099 0.787704 
+              0.652863 0.448231 0.21942 -0.0350821 
+              -0.314735 -0.484903 -0.414848 -0.338489 
+              -0.259051 -0.174878 -0.0973714 -0.0271981 
+              0.0369766 0.0941479 0.142175 0.178004 
+              0.201891 0.210085 0.204232 0.180554 
+              0.142776 0.0861303 0.00402904 -0.0979882 
+              -0.211205 -0.326995 -0.461188 -0.54089 
+              -0.520914 -0.452165 -0.353817 -0.198454 
+              -0.0131585 0.21846 0.470002 0.595099 
+              0.552977 0.521659 0.493144 0.478334 
+              0.476826 0.487843 0.510272 0.542588 
+              0.562688 0.612592 0.598824 0.314127 
+              -0.096139 -0.432362 -0.78378 0.923518 
+              0.883019 0.900756 0.913316 0.921659 
+              0.961258 -0.936069 -0.598721 -0.244621 
+              0.150255 0.545726 0.82248 0.783444 
+              0.745653 0.7101 0.67763 0.648413 
+              0.623672 0.601627 0.575228 0.556444 
+              0.488964 0.148608 -0.285545 -0.632402 
+              -0.930222 0.869016 0.767298 0.748757 
+              0.856774 -0.964738 -0.667572 -0.313837 
+              0.114882 0.420993 0.433347 0.444408 
+              0.449216 0.461453 0.482168 0.516628 
+              0.552472 0.606246 0.643707 0.722632 
+              0.812976 0.656356 0.178136 -0.366144 
+              -0.777536 -0.732151 -0.634621 -0.535333 
+              -0.436901 -0.340083 -0.248903 -0.163671 
+              -0.0883447 -0.0232873 0.0237291 0.0470244 
+              0.0582113 0.0573143 0.0445816 0.0239723 
+              0.110791 0.260715 0.345214 0.372433 
+              0.36099 0.30186 0.216201 Array too long.  Skipped 7168 elements.
+
+  [T] 0.05111 seconds
+GetProcessorCount()
+  [O] Count: 1
+  [T] 0.00004 seconds
+GetProgramMemoryIds()
+  [I] procId: 0
+  [O] Memory ids found: 1
+  [T] 0.00007 seconds
+GetSymbolsByMemory()
+  [I] ProcId: 0
+  [I] MemId: 0
+  [O] Symbols Found: 595
+  [T] 0.00122 seconds
+Disconnect()
+  [T] 5.18024 seconds
